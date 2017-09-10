@@ -1,0 +1,643 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+	武汉地图找工地_武汉在建工地地图_武汉装修样板房-大工匠武汉装修网
+</title><meta name="keywords" content="装修施工现场图,装修实景图,装修样板房" /><meta name="description" content="大工匠武汉装修网提供装修施工现场图、装修实景图，免费预约参观武汉装修样板房，方便挑选武汉最好的装修施工队。" /><link href="../Style/all.css" rel="stylesheet" type="text/css" /><link href="../Style/list.css" rel="stylesheet" type="text/css" /><link href="../Style/gongdi.css" rel="stylesheet" type="text/css" />
+    <script src="../Js/jquery.min.1.8.js" type="text/javascript"></script>
+    <style type="text/css">
+        body {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -3;
+            cursor:pointer;
+        }
+        .main {
+            width: 100%;
+            height: 100%;
+            min-height: 600px;
+            z-index: -1;
+            margin:0px;
+            position:relative;
+            margin-top: 10px;
+        }
+        #allmap {
+            width: 100%;
+            height: 100%;
+            min-height: 600px;
+        }
+
+        .menu{
+            background-color:#fff;
+            position:absolute;
+            width:600px;
+            /*height:120px;*/
+            display:inline-block;
+            z-index:2;
+            margin-top:10px;
+            margin-left:40px;
+            box-shadow: 0 0 6px rgba(0,0,0,.2);
+            padding:10px;
+        }
+
+
+        .titlebar{
+            margin:0px;
+            /*position: absolute;*/
+            /*z-index: 2;*/
+            height:32px;
+            line-height:32px;
+        }
+        .asnav{
+            float:left;
+            margin-left:10px;
+        }
+        .asnav a{
+            display:inline-block;
+            height:30px;
+            line-height:30px;
+            border-radius:15px;
+            text-align:center;
+            border:1px solid #35b471;
+            padding:0 20px;
+            color:#35b471;
+            margin-right:5px;
+            margin-bottom:5px;
+        }
+        .asnav a.active{
+            background-color:#35b471;
+            color:#ffffff;
+        }
+        .searchnav{
+            /*line-height:60px;*/
+            /*float:right;*/
+            /*margin-right:60px;*/
+            /*height: 60px;*/
+            width:300px;
+            margin-bottom:10px;
+            float:left;
+        }
+        .searchnav .Search{
+            border: 1px solid #f39801;
+            height:30px;
+            border-radius:0px;
+            width: 90%;
+            margin-left:0px;
+            border:none;
+            border-left:1px solid #f39801;
+        }
+        .searchnav .BtnSearch{
+            height:32px;
+            width:100%;
+            border-radius:0px;
+        }
+        .buildbox {
+            position:absolute;
+            padding: 20px;
+            top: 125px;
+            left:10px;
+            z-index:2;
+            background-color:#ffffff;
+            box-shadow: 0 0 6px rgba(0,0,0,.2);
+            width:248px;
+        }
+        .builditem {
+            padding: 15px 0 15px 120px;
+            border-bottom: 1px solid #e0e0e0;
+            position: relative;
+            line-height: 20px;
+            height: 80px;
+        }
+        .builditem .imgbox {
+            position: absolute;
+            top: 15px;
+            left: 0;
+            width: 110px;
+            height: 80px;
+        }
+        .builditem .imgbox img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .builditem .title {
+            font-size: 18px;
+            color: #444;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .builditem .gdnum {
+            color:#a3a3a3;
+            margin-bottom: 10px;
+        }
+        .builditem .gdnum span{
+            color:#30b26a;
+        }
+        .builditem .lookgd {
+            color: #eb6001;
+            height:20px;
+            line-height:20px;
+            border-radius:10px;
+            padding:0px 10px;
+            border:1px solid #eb6001;
+            display:inline-block;
+        }
+
+        .asfilterbox ul{
+            display:none;
+        }
+        .asfilterbox li.active{
+            background-color:#ecebe9;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            $(".asnav a").click(function () {
+                $(".asnav a").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            parent.scroll(0, 148);
+        });
+        //Tab切换
+        $(function () {
+            $("#nav-5").attr("class", "nav-1hover");
+        });
+    </script>
+</head>
+<body>
+    <!--主导航-->
+    <div class="upper">
+    <div class="upper-n">
+		<div style="float:left;"><i class="city-i"> </i><div class="slogan-s-a nav-list" style="float:left"><div class="city">
+                武汉<a style="color: #00ac26;" title="切换其它城市">[切换]</a>&nbsp;&nbsp;
+            </div>
+            <div class="select-city" id="downmenu">
+                <a href="../-city=wh.htm" tppabs="http://xiaogongjiang.com/?city=wh" title="武汉">武汉</a> <a href="javascript:void0;" tppabs="http://yt.gz360.com/?city=yt" title="烟台">烟台</a>
+            </div></div>
+				</div>
+        <div class="upper-m" id="upper-m">
+            </div>
+        <div class="upper-c">
+            <ul><li>
+                    <div class="upper-c4">
+                        咨询：17092611888</div>
+                </li>
+                <li>
+                    <div class="upper-c5">
+                        <a onClick="AddFavorite(location.href,document.title)" style="cursor:pointer;">加入收藏</a></div>
+                </li>
+                <li class="nav-list">
+                    <div class="upper-c6">
+                        <a title="网站导航">网站导航</a></div>
+                    <div class="navigation" id="downmenu1">
+                        <ul>
+                            <li>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/ask/" title="问答中心" class="downmenu-bj">问答中心</a>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/ask/list1-1-0-0.html" title="家装设计" class="downmenu-no">家装设计</a>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/ask/list1-2-0-0.html" title="装修流程" class="downmenu-no">装修流程</a>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/ask/list1-3-0-0.html" title="家居产品" class="downmenu-no">家居产品</a>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/ask/list1-4-0-0.html" title="装饰材料" class="downmenu-no"> 装饰材料</a>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/ask/list1-5-0-0.html" title="工装设计" class="downmenu-no">工装设计</a>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/ask/list1-6-0-0.html" title="房产知识" class="downmenu-no">房产知识</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/news/" title="新闻中心" class="downmenu-bj">新闻中心</a>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/news/list1-1.html" title="行业报道" class="downmenu-no">行业报道</a>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/news/list1-3.html" title="家装攻略" class="downmenu-no">家装攻略</a>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/news/list1-5.html" title="最新签约" class="downmenu-no">最新签约</a>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/news/list1-6.html" title="装修知识" class="downmenu-no">装修知识</a>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/news/list1-7.html" title="最新签约" class="downmenu-no">装修风水</a>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/news/list1-8.html" title="装修建材" class="downmenu-no">装修建材</a>
+                            </li>                        
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="/Js/jquery.cookie.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var SetHtml = function (name, id, username, usertype) {
+        
+        if (id == '') {
+            $("#upper-m").html("<div style=\"float:left;\">欢迎您访问大工匠！</div><div style=\"float:right;\"><a href=\"/Member/login.aspx\" title=\"工长登录\">工长登录</a><a style=\"color:#999; font-weight:normal;\">|</a><a href=\"/Member/msglogin.aspx\" title=\"查看报价\">查看报价</a><a style=\"color:#999; font-weight:normal;\">|</a><a href=\"/Member/msgloginforcom.aspx\" title=\"评价工长\">评价工长</a></div>");
+            //$("#exit").hide();
+        } else {
+
+            var typestr = "亲爱的 <span style=\"color: #00a567;\">" + (name.length > 0 ? name : username) + "</span> 欢迎您访问大工匠！<a style=\"color: #00a567;\" href=\"/member/\">进入中心</a><a  style=\"cursor:pointer;color: #00a567;\" onclick=\"$.cookie('user', null, { path: '/' });SetHtml('', '', '', '');\">退出登陆</a>"; 
+            $("#upper-m").html(typestr);
+            //$("#downmenu").append("<a id=\"exit\" style=\"cursor:pointer\" onclick=\"$.cookie('user', null, { path: '/' });SetHtml('', '', '', '');\" title=\"退出登录\" class=\"downmenu-no\">退出登录</a>");
+
+
+        }
+    };
+    $("#upper-m").ready(function () {
+        var s = $.cookie("user");
+        var qdnum = getCookie(decodeURIComponent(s), "name");
+        if (qdnum.length > 0) {
+            $("#qdnum").html(getCookie(decodeURIComponent(s), "qdnum"));
+        }
+        
+        if (s != null) SetHtml(getCookie(decodeURIComponent(s), "name"), getCookie(decodeURIComponent(s), "id"), getCookie(decodeURIComponent(s), "username"), getCookie(decodeURIComponent(s), "usertype"));
+        else SetHtml('', '', '', '');
+
+    });
+    function getCookie(cookstr, name) {//获取指定名称的cookie的值
+        var str = "";
+        var arrStr = cookstr.split("&");
+        for (var i = 0; i < arrStr.length; i++) {
+            var start = arrStr[i].indexOf("=") + 1;
+            var end = arrStr[i].length;
+            if (arrStr[i].indexOf(name) > -1) {
+                if (arrStr[i].indexOf("=") > -1) {
+                    str = arrStr[i].substr(start, end);
+                }
+            }
+        }
+        return str;
+    }
+function AddFavorite(sURL, sTitle) {
+                              try { //IE
+                                  window.external.addFavorite(sURL, sTitle);
+                              } catch (e) {
+                                  try { //Firefox
+								  obj.setAttribute("rel", "sidebar"), obj.title = title, obj.href = url;
+                                      //window.sidebar.addPanel(sTitle, sURL, "");
+                                  } catch (e) {
+                                      try {//Chrome无法自动收藏，用创建快应用程序的捷方式来替代。
+                                          createShortcut();
+                                      } catch (e) {
+                                          alert("收藏失败！请使用Ctrl+D进行添加。");
+                                      }
+                                  }
+                              }
+                          }
+	</script>
+<div class="header">
+    <div class="login-box pull-left">
+        <a href="/" class="login mr10">
+            <img title="大工匠-装修省钱没烦恼" alt="大工匠-装修省钱没烦恼" src="../images/logo-index.png" /></a>
+			<div  style="margin:-39px 0 0 160px;"><img alt="" src="../images/sublogos.png" /></div>	
+		<!--<div  style=";font-size:16px; margin:-32px 0 0 160px;  height:50px;"><span style="margin:40px 0 0 0px;">砍掉装修公司中间环节，装修就是省！</span></div>-->
+    </div>
+    <div class="navbar pull-left">
+        <div>
+            <p>
+                <b>装修现场体验：</b></p>
+            <p>
+                武汉市东湖新技术开发区关山村保利.茉莉公馆一区9幢4层17号</p>
+        </div>
+    </div>
+</div>
+
+<div class="nav">
+        <div style="width: 1190px" class="nav-1 nav-gz">
+            <a title="首页" href="/" id="nav-1">首页</a> <a title="找工长" href="/gongzhang/" id="nav-2">
+                找工长</a> <a title="找工人" href="/gongren/" id="nav-3">找工人</a> <a title="装修报价" href="/baojia/"
+                    id="nav-4">装修报价</a> <a title="工长工地" href="/gongdi/" id="nav-5">工长工地</a>
+            <a title="业主评价" href="/Comment/" id="nav-6">业主评价</a> <a title="我要装修" href="/zb/about.html" id="nav-7">我要装修</a>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="menu">
+        <div class="titlebar">
+            <div class="searchnav">
+                <div style="width:70%;float:left;border-top:1px solid #f39801;border-bottom:1px solid #f39801;"><input type="text" placeholder="请输入小区名搜索" class="Search" id="txtHouseName"/></div>
+                <div style="width:30%;float:left;"><input type="button" value="搜索" class="BtnSearch query" /></div>
+                <div style="clear:both"></div>
+            </div>
+
+            <div class="asnav">
+                <a class="active" data="2" initnum="0">在建工地<span style="">(<span class="num">0</span>)</span></a>
+                <a data="3" initnum="4000">竣工工地<span style="">(<span class="num">0</span>)</span></a>
+            </div>
+        </div>
+        </div>
+
+        <div id="allmap"></div>
+
+        <div id="exampleLay" style="display:none">
+            <a class="househref" href="" target="_blank"><div style="background-color:#EE5D5B;border:1px solid #BC3B3A;color:white;height:18px;padding:2px;line-height:18px;white-space:nowrap;font-size:12px;border-radius:5px 5px;">
+                <span class="housename"></span>&nbsp;
+                <span class="housegdnum" style="font-size:14px;"></span>&nbsp;个工地
+                <div class="arrow" style="background:url(http://map.baidu.com/fwmap/upload/r/map/fwmap/static/house/images/label.png) no-repeat;position:absolute;width:11px;height:10px;top:22px;left:10px;overflow:hidden;"></div>
+            </div></a>
+        </div>
+
+        <div id="initCenterLay" style="display:none">
+            <div style="background-color:#eb6100;border:1px solid #eb6100;color:white;height:18px;padding:2px 5px;line-height:18px;white-space:nowrap;font-size:12px;border-radius:5px 5px;">
+                <span class="shopname"></span>
+                <div class="arrow" style="background:url(http://map.baidu.com/fwmap/upload/r/map/fwmap/static/house/images/label.png) no-repeat;position:absolute;width:11px;height:10px;top:22px;left:10px;overflow:hidden;"></div>
+            </div>
+        </div>
+    </div>
+    
+    <input type="hidden" class="hidHouseName" />
+    <input type="hidden" class="hidAreaCode" />
+    <input type="hidden" class="hidStartSquare" />
+    <input type="hidden" class="hidEndSquare" />
+    <input type="hidden" class="hidPeriodStatus" value="2"/>
+</body>
+</html>
+<script type="text/javascript" src="../../api.map.baidu.com/api-v=2.0&ak=F8a9d794bfe87e2b41aa40d1ecc91f69" tppabs="http://api.map.baidu.com/api?v=2.0&ak=F8a9d794bfe87e2b41aa40d1ecc91f69"></script>
+<script src="../LibJs/HouseEstate/HouseEstateMap.js?v=3"></script>
+<script src="../LibJs/EffectDiagram/EffectDiagram.js?v=1"></script>
+<script type="text/javascript">
+    //----------全局参数----------
+    var prevzoomIndex = 14;//地图缩放比例分界点
+    var showType = 0;//地图缩放后标的显示类型
+    var ClearOverlayArray = new Array();//地图缩放需要清除层的集合
+    var initLng = 114.310034;//地图初始中心点经度
+    var initLat = 30.54333;//地图初始中心点纬度
+    var initZoom = 13;//地图初始缩放比例
+    var mp = null;//百度地图
+    //----------------------------
+    //-------------------------复杂的自定义覆盖物---------------------------------
+    function ComplexCustomOverlay(point, elementid, offsetX, offsetY) {
+        this._point = point;
+        this._elementid = elementid;
+        this._offsetX = offsetX;
+        this._offsetY = offsetY;
+    }
+    ComplexCustomOverlay.prototype = new BMap.Overlay();
+    ComplexCustomOverlay.prototype.initialize = function (map) {
+        this._map = map;
+        var div = this._div = document.createElement("div");
+        div.style.position = "absolute";
+        div.innerHTML = document.getElementById(this._elementid).innerHTML;
+
+        mp.getPanes().labelPane.appendChild(div);
+
+        return div;
+    }
+    ComplexCustomOverlay.prototype.draw = function () {
+        var map = this._map;
+        var pixel = map.pointToOverlayPixel(this._point);
+        this._div.style.left = pixel.x - 10 + this._offsetX + "px";
+        this._div.style.top = pixel.y - 30 + this._offsetY + "px";
+    }
+    //---------------------------------------------------------------------------
+    //----------------------------创建Marker工厂---------------------------------
+    var CustomMarkerFactory = function () {
+        this._point = null;
+        this._housename = "";
+        this._housegdnum = 0;
+        var that = this;
+        var myCompOverlay;
+        this.Markermouseover = function () {
+            if (myCompOverlay == null) {
+                myCompOverlay = AddCustomOverlay_1({
+                    lng: that._point.lng,
+                    lat: that._point.lat,
+                    housename: that._housename,
+                    housegdnum: that._housegdnum,
+                    offsetX: 0,
+                    offsetY: 0,
+                    isclear: true
+                });
+                myCompOverlay._div.onmouseover = function () {
+                    this.style.display = "";
+                }
+                myCompOverlay._div.onmouseout = function () {
+                    this.style.display = "none";
+                }
+            } else {
+                myCompOverlay.show();
+            }
+        }
+        this.Markermouseout = function () {
+            myCompOverlay.hide();
+        }
+        this.CreateMarker = function () {
+            var marker = this._marker = new BMap.Marker(this._point);
+            marker.addEventListener("mouseover", this.Markermouseover);
+            marker.addEventListener("mouseout", this.Markermouseout);
+            return marker;
+        }
+    }
+    //----------------------------------------------------------------------------------
+    //添加一个自定义marker
+    function AddCustomMarker(opt) {
+        var markerFactory = new CustomMarkerFactory();
+        markerFactory._point = new BMap.Point(opt.lng, opt.lat);
+        markerFactory._housename = opt.housename;
+        markerFactory._housegdnum = opt.housegdnum;
+        var marker = markerFactory.CreateMarker();
+        mp.addOverlay(marker);
+        ClearOverlayArray.push(marker);
+    }
+    //添加一个自定义覆盖物(类型1)
+    function AddCustomOverlay_1(opt) {
+        var elementid = "exampleLay";
+        var div = document.getElementById(elementid);
+        var spanhousename = div.getElementsByClassName("housename")[0];
+        var spanhousegdnum = div.getElementsByClassName("housegdnum")[0];
+        var ahousehref = div.getElementsByClassName("househref")[0];
+        spanhousename.innerHTML = opt.housename;
+        spanhousegdnum.innerHTML = opt.housegdnum;
+        ahousehref.href = "gdmaplist.aspx?k=" + opt.housename;
+        var myCompOverlay = new ComplexCustomOverlay(new BMap.Point(opt.lng, opt.lat), elementid, opt.offsetX, opt.offsetY);
+        mp.addOverlay(myCompOverlay);
+        ClearOverlayArray.push(myCompOverlay);
+        return myCompOverlay;
+    }
+    //添加一个自定义覆盖物(类型2)
+    function AddCustomOverlay_2(opt) {
+        var elementid = "initCenterLay";
+        var div = document.getElementById(elementid);
+        var spanshopname = div.getElementsByClassName("shopname")[0];
+        spanshopname.innerHTML = opt.shopname;
+        var myCompOverlay = new ComplexCustomOverlay(new BMap.Point(opt.lng, opt.lat), elementid, opt.offsetX, opt.offsetY);
+        mp.addOverlay(myCompOverlay);
+        return myCompOverlay;
+    }
+    //清除所有覆盖物
+    function RemoveAllCustomOverlay() {
+        for (i = 0; i < ClearOverlayArray.length; i++) {
+            mp.removeOverlay(ClearOverlayArray[i]);
+        }
+    }
+</script>
+
+<script type="text/javascript">
+    //-------------地图上面小区数据源---------------------------
+    function housePointClass(opt) {
+        this._lng = opt.lng;
+        this._lat = opt.lat;
+        this._housename = opt.housename;
+        this._housegdnum = opt.housegdnum;
+    }
+    var housePointArray = new Array();
+    //----------------------------------------------------------
+    //-------------地图上面店铺数据源---------------------------
+    function shopPointClass(opt) {
+        this._lng = opt.lng;
+        this._lat = opt.lat;
+        this._shopname = opt.shopname;
+    }
+    var shopPointArray = new Array();
+    //----------------------------------------------------------
+
+    $(function () {
+        //初始化百度地图
+        initMap();
+        //获取地图小区数据源
+        GetMapHousePoint(false);
+    });
+
+    //初始化显示地图
+    function initMap() {
+        mp = new BMap.Map("allmap");
+        mp.centerAndZoom(new BMap.Point(initLng, initLat), initZoom);
+        mp.enableScrollWheelZoom();
+        mp.addEventListener("zoomend", function () {
+            ShowHousePoint();
+        });
+
+        shopPointArray.push(new shopPointClass({ lng: initLng, lat: initLat, shopname: "大工匠互联网家装体验馆 85360360" }));
+        shopPointArray.push(new shopPointClass({ lng: 114.258508, lat: 30.55266, shopname: "汉阳国博店" }));
+        for (var i = 0; i < shopPointArray.length; i++) {
+            AddCustomOverlay_2({
+                lng: shopPointArray[i]._lng,
+                lat: shopPointArray[i]._lat,
+                shopname: shopPointArray[i]._shopname,
+                offsetX: 0,
+                offsetY: 0
+            });
+            //创建水滴
+            var pt = new BMap.Point(shopPointArray[i]._lng, shopPointArray[i]._lat);
+            var myIcon = new BMap.Icon("../../m.gz360.com/wh/images/map1.png"/*tpa=http://m.gz360.com/wh/images/map1.png*/, new BMap.Size(24, 33));
+            var marker2 = new BMap.Marker(pt, { icon: myIcon });
+            mp.addOverlay(marker2);
+        }
+    }
+    //在地图上面显示小区标记
+    function ShowHousePoint() {
+        var zoomIndex = mp.getZoom();
+        if (zoomIndex <= prevzoomIndex) {
+            if (showType != 1) {
+                RemoveAllCustomOverlay();
+                for (i = 0; i < housePointArray.length; i++) {
+                    AddCustomMarker({
+                        lng: housePointArray[i]._lng,
+                        lat: housePointArray[i]._lat,
+                        housename: housePointArray[i]._housename,
+                        housegdnum: housePointArray[i]._housegdnum
+                    });
+                }
+                showType = 1;
+            }
+        } else {
+            if (showType != 2) {
+                RemoveAllCustomOverlay();
+                for (i = 0; i < housePointArray.length; i++) {
+                    AddCustomMarker({
+                        lng: housePointArray[i]._lng,
+                        lat: housePointArray[i]._lat,
+                        housename: housePointArray[i]._housename,
+                        housegdnum: housePointArray[i]._housegdnum
+                    });
+                    AddCustomOverlay_1({
+                        lng: housePointArray[i]._lng,
+                        lat: housePointArray[i]._lat,
+                        housename: housePointArray[i]._housename,
+                        housegdnum: housePointArray[i]._housegdnum,
+                        offsetX: 0,
+                        offsetY: 0
+                    });
+                }
+                showType = 2;
+            }
+        }
+    }
+</script>
+
+<script type="text/javascript">
+    //获取地图显示小区数据源
+    function GetMapHousePoint(isSearch) {
+        var LIB_OBJ = new LIB_GetMapShowHouseEstateList();
+        LIB_OBJ.pageIndex = 1;
+        LIB_OBJ.pageSize = 1000;
+        LIB_OBJ.HouseName = $(".hidHouseName").val();
+        LIB_OBJ.AreaCode = $(".hidAreaCode").val();
+        LIB_OBJ.StartSquare = $(".hidStartSquare").val();
+        LIB_OBJ.EndSquare = $(".hidEndSquare").val();
+        LIB_OBJ.PeriodStatus = $(".hidPeriodStatus").val();
+        LIB_OBJ.Execute(function (json) {
+            if (!json.IsSuccess) {
+                return;
+            }
+            housePointArray = new Array();
+            $.each(json.Data.List, function (i, j) {
+                var housePoint = new housePointClass({ lng: j.Longitude, lat: j.Latitude, housename: j.HouseName, housegdnum: j.zjgdNum });
+                housePointArray.push(housePoint);
+            });
+            //显示小区标记
+            showType = 0;
+            ShowHousePoint();
+            if (!isSearch) {
+                mp.centerAndZoom(new BMap.Point(initLng, initLat), initZoom);
+            } else {
+                if (housePointArray.length > 0) {
+                    mp.centerAndZoom(new BMap.Point(housePointArray[0]._lng, housePointArray[0]._lat), initZoom);
+                } else {
+                    mp.centerAndZoom(new BMap.Point(initLng, initLat), initZoom);
+                }
+            }
+        });
+    }
+</script>
+
+<script type="text/javascript">
+    //小区列表数据查询结果
+    $(function () {
+        //搜索框搜索
+        $(".query").click(function () {
+            var HouseName = $("#txtHouseName").val();
+            if (HouseName == "") {
+                return;
+            }
+            window.location.href = "gdmaplist.aspx?k=" + HouseName;
+        });
+        //工地搜索
+        $(".asnav a").click(function () {
+            var PeriodStatus = $(this).attr("data");
+            $(".hidPeriodStatus").val(PeriodStatus);
+            GetMapHousePoint(true);
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(function () {
+        //获取工地的数量
+        $.each($(".asnav a"), function () {
+            var that = $(this);
+            var PeriodStatus = $(this).attr("data");
+            var initnum = $(this).attr("initnum");
+            var LIB_OBJ = new LIB_GetEffectDiagramCountByCond();
+            LIB_OBJ.PeriodStatus = PeriodStatus;
+            LIB_OBJ.Execute(function (json) {
+                if (!json.IsSuccess) {
+                    return;
+                }
+                that.find(".num").text(json.Data + parseInt(initnum));
+            });
+        });
+    });
+
+</script>
+

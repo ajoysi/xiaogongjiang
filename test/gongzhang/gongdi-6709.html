@@ -1,0 +1,799 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+	武汉工长石学刚在建工地_免费预约参观在建工地_【360工长】武汉装修网
+</title><meta name="keywords" content="武汉工长石学刚在建工地,参观工长石学刚工地" /><meta name="description" content="360工长武汉装修网为您提供：免费预约参观工长石学刚在建工地施工进程情况。" /><meta name="robots" content="all" /><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /><link href="/favicon.ico" rel="shortcut icon" /><link href="../Style/all.css" rel="stylesheet" type="text/css" /><link href="../Style/list.css" rel="stylesheet" type="text/css" />
+    <script src="../Js/jquery.min.1.8.js"></script>
+    <script src="../Js/common.js"></script>
+    <link href="../Js/selectbox/jquery.selectbox.css" rel="stylesheet" type="text/css" />
+    <script src="../Js/selectbox/jquery.selectbox.js"></script>
+    <script>       
+        //预约量房弹窗
+        function ShowBox(parm) {
+            $("#gdid").val(parm);
+            $(".get_box").show();
+        }
+
+        function CloseYY() {
+            $(".get_box").hide();
+            $("#gdid").val("");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="upper">
+    <div class="upper-a">
+		<div style="float:left;"><i class="city-i"> </i><div class="slogan-s-a nav-list" style="float:left"><div class="city">
+                武汉<a style="color: #00ac26;" title="切换其它城市">[切换]</a>&nbsp;&nbsp;
+            </div>
+            <div class="select-city" id="downmenu">
+                <a href="../-city=wh.htm" tppabs="http://xiaogongjiang.com/?city=wh" title="武汉">武汉</a> <a href="" tppabs="http://yt.gz360.com/?city=yt" title="烟台">烟台</a>
+            </div></div>
+				</div>
+        <div class="upper-b" id="upper-b">
+            </div>
+        <div class="upper-c">
+            <ul><li>
+                    <div class="upper-c4">
+                        咨询：17092611888</div>
+                </li>
+                <li>
+                    <div class="upper-c5">
+                        <a onClick="AddFavorite(location.href,document.title)" style="cursor:pointer;">加入收藏</a></div>
+                </li>
+                <li class="nav-list">
+                    <div class="upper-c6">
+                        <a title="网站导航">网站导航</a></div>
+                    <div class="navigation" id="downmenu1">
+                        <ul>
+                            <li>
+                                <a target="_blank" href="" tppabs="http://www.gz360.com/ask/" title="问答中心" class="downmenu-bj">问答中心</a>
+                                <a target="_blank" href="" tppabs="http://www.gz360.com/ask/list1-1-0-0.html" title="家装设计" class="downmenu-no">家装设计</a>
+                                <a target="_blank" href="" tppabs="http://www.gz360.com/ask/list1-2-0-0.html" title="装修流程" class="downmenu-no">装修流程</a>
+                                <a target="_blank" href="" tppabs="http://www.gz360.com/ask/list1-3-0-0.html" title="家居产品" class="downmenu-no">家居产品</a>
+                                <a target="_blank" href="" tppabs="http://www.gz360.com/ask/list1-4-0-0.html" title="装饰材料" class="downmenu-no"> 装饰材料</a>
+                                <a target="_blank" href="" tppabs="http://www.gz360.com/ask/list1-5-0-0.html" title="工装设计" class="downmenu-no">工装设计</a>
+                                <a target="_blank" href="" tppabs="http://www.gz360.com/ask/list1-6-0-0.html" title="房产知识" class="downmenu-no">房产知识</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="" tppabs="http://www.gz360.com/news/" title="新闻中心" class="downmenu-bj">新闻中心</a>
+                                <a target="_blank" href="" tppabs="http://www.gz360.com/news/list1-1.html" title="行业报道" class="downmenu-no">行业报道</a>
+                                <a target="_blank" href="" tppabs="http://www.gz360.com/news/list1-3.html" title="家装攻略" class="downmenu-no">家装攻略</a>
+                                <a target="_blank" href="" tppabs="http://www.gz360.com/news/list1-5.html" title="最新签约" class="downmenu-no">最新签约</a>
+                                <a target="_blank" href="" tppabs="http://www.gz360.com/news/list1-6.html" title="装修知识" class="downmenu-no">装修知识</a>
+                                <a target="_blank" href="" tppabs="http://www.gz360.com/news/list1-7.html" title="最新签约" class="downmenu-no">装修风水</a>
+                                <a target="_blank" href="" tppabs="http://www.gz360.com/news/list1-8.html" title="装修建材" class="downmenu-no">装修建材</a>
+                            </li>                        
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="/Js/jquery.cookie.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var SetHtml = function (name, id, username, usertype) {
+        
+        if (id == '') {
+            $("#upper-b").html("<div style=\"float:left;\">欢迎您访问大工匠！</div><div style=\"float:right;\"><a href=\"/Member/login.aspx\" title=\"请登录\">请登录</a><a style=\"color:#999; font-weight:normal;\">|</a><a href=\"/Member/join.aspx\" title=\"免费注册\">免费注册</a></div>");
+            //$("#exit").hide();
+        } else {
+
+            var typestr = "亲爱的 <span style=\"color: #00a567;\">" + (name.length > 0 ? name : username) + "</span> 欢迎您访问大工匠！<a style=\"color: #00a567;\" href=\"/member/\">进入中心</a><a  style=\"cursor:pointer;color: #00a567;\" onclick=\"$.cookie('user', null, { path: '/' });SetHtml('', '', '', '');\">退出登陆</a>"; 
+            $("#upper-b").html(typestr);
+            //$("#downmenu").append("<a id=\"exit\" style=\"cursor:pointer\" onclick=\"$.cookie('user', null, { path: '/' });SetHtml('', '', '', '');\" title=\"退出登录\" class=\"downmenu-no\">退出登录</a>");
+
+
+        }
+    };
+    $("#upper-b").ready(function () {
+        var s = $.cookie("user");
+        var qdnum = getCookie(decodeURIComponent(s), "name");
+        if (qdnum.length > 0) {
+            $("#qdnum").html(getCookie(decodeURIComponent(s), "qdnum"));
+        }
+        
+        if (s != null) SetHtml(getCookie(decodeURIComponent(s), "name"), getCookie(decodeURIComponent(s), "id"), getCookie(decodeURIComponent(s), "username"), getCookie(decodeURIComponent(s), "usertype"));
+        else SetHtml('', '', '', '');
+
+    });
+    function getCookie(cookstr, name) {//获取指定名称的cookie的值
+        var str = "";
+        var arrStr = cookstr.split("&");
+        for (var i = 0; i < arrStr.length; i++) {
+            var start = arrStr[i].indexOf("=") + 1;
+            var end = arrStr[i].length;
+            if (arrStr[i].indexOf(name) > -1) {
+                if (arrStr[i].indexOf("=") > -1) {
+                    str = arrStr[i].substr(start, end);
+                }
+            }
+        }
+        return str;
+    }
+function AddFavorite(sURL, sTitle) {
+                              try { //IE
+                                  window.external.addFavorite(sURL, sTitle);
+                              } catch (e) {
+                                  try { //Firefox
+								  obj.setAttribute("rel", "sidebar"), obj.title = title, obj.href = url;
+                                      //window.sidebar.addPanel(sTitle, sURL, "");
+                                  } catch (e) {
+                                      try {//Chrome无法自动收藏，用创建快应用程序的捷方式来替代。
+                                          createShortcut();
+                                      } catch (e) {
+                                          alert("收藏失败！请使用Ctrl+D进行添加。");
+                                      }
+                                  }
+                              }
+                          }
+	</script>
+<div class="top2">
+    <a class="logo" href="/">
+        <img src="../Images/logo.gif" width="230" height="113" />
+    </a>
+	<div class="slogan-s">
+	<img src="../Images/logot.png" /><div><ul><li></li></ul></div></div>
+	
+    <div class="display">
+        <div class="displayR" id="displayR"><i>今日已有 </i><span>0</span> <span>1</span> <span>8</span> <i>位业主预约成功！</i></div>
+    </div>
+    
+</div>
+<div class="new-b">
+</div>
+<div class="nav77">
+    <div class="nav-77">
+        <a id="nav-1" href='/gongzhang/6709.html' title="首页">首页</a>
+        <a id="nav-7" href='/gongzhang/about6709.html' title="我的介绍">我的介绍</a>
+        <a id="nav-2" href='/gongzhang/gongdi-6709.html' title="在建工地">在建工地</a>
+        <a id="nav-3" href='/gongzhang/jianli-0-6709.html' title="工地验收报告">工地验收报告</a>
+        <a id="nav-4" href='/gongzhang/yuyue-6709.html' title="预约信息">预约信息</a>
+        <a id="nav-5" href='/gongzhang/sjs-6709.html' title="合作设计师"> 合作设计师</a>
+        <a id="nav-6" href='/Comment/list-石学刚.html' title="评论留言">评论留言</a>
+    </div>
+</div>
+
+
+    <div class="location">
+        您现在所在的位置：<a href="/" title="首页">首页</a> > <a href="/gongzhang/">淘工长</a> > <a href="/gongzhang/6709.html">工长石学刚网店</a> > 工长石学刚工地
+    </div>
+    <div class="site-a">
+        <div class="site-b1">
+            <div class="site-b">
+                <div class="site-d site-d_design">
+                    <h1>工长石学刚工地列表</h1>
+
+                </div>
+                <!--默认排序-->
+                <div class="site-list tab_1_body" id="tab_1_body_0">
+                    <ul>
+                        
+                        <li class="site-list-li ">
+                            <a target="_blank" href="/gongdi/2145.html" class="site-lista">
+                                <img src="/UpLoad/Rep/6709/131461150179182849.jpg" width="110" height="110" alt="美联时光里" title="美联时光里" /><span><img src="../Images/pic-top.gif" width="110" height="110" /></span></a>
+                            <div class="site-listb">
+                                <div class="site-listc site-listc_gd">
+                                    <span class="site-listd"><a target="_blank" href="/gongdi/2145.html"><font color="#00a568">美联时光里</font></a></span>
+                                    <div class="site-list_g"><span>面积：<font>98m²</font></span><span>阶段：<font>泥木工程进场验收</font></span></div>
+                                    <a target="_blank" href="/gongdi/2145.html" class="site-liste">查看工地</a>
+                                </div>
+                                <div class="site-listf">
+                                    <div class="site-listg">
+                                        <ul>
+                                            <li><span>工长：<font>石学刚</font></span><span>监理：<font>王姜</font></span></li>
+                                            <li>合同价：<font>43000.00元</font><a target="_blank" href="../baojia/baojianav7535.html" tppabs="http://xiaogongjiang.com/baojia/baojianav7535.html" title="注册下载完整造价单" class="green_line">（下载工地完整造价单）</a></li>
+                                            <li>验收结果：
+                                                水电工程验收 <i class="color">优秀</i><a target="_blank" href="/jianli/9605.html" class="green_line">(查看详情)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="site-listh site-listh_gd">
+                                        <a style="cursor: pointer" onclick="ShowBox('2145')" class="green_line">预约参观</a>
+                                        <p>已有<i class="color">0</i>人预约参观</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="site-list-li ">
+                            <a target="_blank" href="/gongdi/2123.html" class="site-lista">
+                                <img src="/UpLoad/Rep/6709/131449290685380818.jpg" width="110" height="110" alt="富强熙园" title="富强熙园" /><span><img src="../Images/pic-top.gif" width="110" height="110" /></span></a>
+                            <div class="site-listb">
+                                <div class="site-listc site-listc_gd">
+                                    <span class="site-listd"><a target="_blank" href="/gongdi/2123.html"><font color="#00a568">富强熙园</font></a></span>
+                                    <div class="site-list_g"><span>面积：<font>94m²</font></span><span>阶段：<font>泥木工程进场验收</font></span></div>
+                                    <a target="_blank" href="/gongdi/2123.html" class="site-liste">查看工地</a>
+                                </div>
+                                <div class="site-listf">
+                                    <div class="site-listg">
+                                        <ul>
+                                            <li><span>工长：<font>石学刚</font></span><span>监理：<font>王姜</font></span></li>
+                                            <li>合同价：<font>44000.00元</font><a target="_blank" href="http://wh.gz360.com/baojia/baojianav7339.html" title="注册下载完整造价单" class="green_line">（下载工地完整造价单）</a></li>
+                                            <li>验收结果：
+                                                水电工程验收 <i class="color">优秀</i><a target="_blank" href="/jianli/9370.html" class="green_line">(查看详情)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="site-listh site-listh_gd">
+                                        <a style="cursor: pointer" onclick="ShowBox('2123')" class="green_line">预约参观</a>
+                                        <p>已有<i class="color">0</i>人预约参观</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="site-list-li ">
+                            <a target="_blank" href="/gongdi/2014.html" class="site-lista">
+                                <img src="/UpLoad/Rep/6709/131457691435725896.jpg" width="110" height="110" alt="九坤新城一号" title="九坤新城一号" /><span><img src="../Images/pic-top.gif" width="110" height="110" /></span></a>
+                            <div class="site-listb">
+                                <div class="site-listc site-listc_gd">
+                                    <span class="site-listd"><a target="_blank" href="/gongdi/2014.html"><font color="#00a568">九坤新城一号</font></a></span>
+                                    <div class="site-list_g"><span>面积：<font>85m²</font></span><span>阶段：<font>工程竣工验收</font></span></div>
+                                    <a target="_blank" href="/gongdi/2014.html" class="site-liste">查看工地</a>
+                                </div>
+                                <div class="site-listf">
+                                    <div class="site-listg">
+                                        <ul>
+                                            <li><span>工长：<font>石学刚</font></span><span>监理：<font>王姜</font></span></li>
+                                            <li>合同价：<font>40500.00元</font><a target="_blank" href="http://wh.gz360.com/baojia/baojianav6811.html" title="注册下载完整造价单" class="green_line">（下载工地完整造价单）</a></li>
+                                            <li>验收结果：
+                                                竣工验收 <i class="color">优秀</i><a target="_blank" href="/jianli/9552.html" class="green_line">(查看详情)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="site-listh site-listh_gd">
+                                        <a style="cursor: pointer" onclick="ShowBox('2014')" class="green_line">预约参观</a>
+                                        <p>已有<i class="color">0</i>人预约参观</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="site-list-li ">
+                            <a target="_blank" href="/gongdi/1978.html" class="site-lista">
+                                <img src="/UpLoad/Rep/6709/131434624007899363.jpg" width="110" height="110" alt="百步厅丶百合苑" title="百步厅丶百合苑" /><span><img src="../Images/pic-top.gif" width="110" height="110" /></span></a>
+                            <div class="site-listb">
+                                <div class="site-listc site-listc_gd">
+                                    <span class="site-listd"><a target="_blank" href="/gongdi/1978.html"><font color="#00a568">百步厅丶百合苑</font></a></span>
+                                    <div class="site-list_g"><span>面积：<font>91m²</font></span><span>阶段：<font>油漆工程验收</font></span></div>
+                                    <a target="_blank" href="/gongdi/1978.html" class="site-liste">查看工地</a>
+                                </div>
+                                <div class="site-listf">
+                                    <div class="site-listg">
+                                        <ul>
+                                            <li><span>工长：<font>石学刚</font></span><span>监理：<font>王姜</font></span></li>
+                                            <li>合同价：<font>61500.00元</font><a target="_blank" href="http://wh.gz360.com/baojia/list-百步亭百合苑.html" title="注册下载完整造价单" class="green_line">（下载工地完整造价单）</a></li>
+                                            <li>验收结果：
+                                                竣工验收前巡检 <i class="color">良好</i><a target="_blank" href="/jianli/9150.html" class="green_line">(查看详情)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="site-listh site-listh_gd">
+                                        <a style="cursor: pointer" onclick="ShowBox('1978')" class="green_line">预约参观</a>
+                                        <p>已有<i class="color">0</i>人预约参观</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="site-list-li ">
+                            <a target="_blank" href="/gongdi/1942.html" class="site-lista">
+                                <img src="/UpLoad/Rep/6709/131409590826160099.jpg" width="110" height="110" alt="美联时光里" title="美联时光里" /><span><img src="../Images/pic-top.gif" width="110" height="110" /></span></a>
+                            <div class="site-listb">
+                                <div class="site-listc site-listc_gd">
+                                    <span class="site-listd"><a target="_blank" href="/gongdi/1942.html"><font color="#00a568">美联时光里</font></a></span>
+                                    <div class="site-list_g"><span>面积：<font>60m²</font></span><span>阶段：<font>油漆工程验收</font></span></div>
+                                    <a target="_blank" href="/gongdi/1942.html" class="site-liste">查看工地</a>
+                                </div>
+                                <div class="site-listf">
+                                    <div class="site-listg">
+                                        <ul>
+                                            <li><span>工长：<font>石学刚</font></span><span>监理：<font>王姜</font></span></li>
+                                            <li>合同价：<font>23000.00元</font><a target="_blank" href="../baojia/baojianav6478.html" tppabs="http://xiaogongjiang.com/baojia/baojianav6478.html" title="注册下载完整造价单" class="green_line">（下载工地完整造价单）</a></li>
+                                            <li>验收结果：
+                                                竣工验收前巡检 <i class="color">良好</i><a target="_blank" href="/jianli/8748.html" class="green_line">(查看详情)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="site-listh site-listh_gd">
+                                        <a style="cursor: pointer" onclick="ShowBox('1942')" class="green_line">预约参观</a>
+                                        <p>已有<i class="color">0</i>人预约参观</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="site-list-li ">
+                            <a target="_blank" href="/gongdi/1894.html" class="site-lista">
+                                <img src="/UpLoad/Rep/6709/131431135270187719.jpg" width="110" height="110" alt="上海公馆" title="上海公馆" /><span><img src="../Images/pic-top.gif" width="110" height="110" /></span></a>
+                            <div class="site-listb">
+                                <div class="site-listc site-listc_gd">
+                                    <span class="site-listd"><a target="_blank" href="/gongdi/1894.html"><font color="#00a568">上海公馆</font></a></span>
+                                    <div class="site-list_g"><span>面积：<font>82m²</font></span><span>阶段：<font>工程竣工验收</font></span></div>
+                                    <a target="_blank" href="/gongdi/1894.html" class="site-liste">查看工地</a>
+                                </div>
+                                <div class="site-listf">
+                                    <div class="site-listg">
+                                        <ul>
+                                            <li><span>工长：<font>石学刚</font></span><span>监理：<font>王姜</font></span></li>
+                                            <li>合同价：<font>24800.00元</font><a target="_blank" href="http://wh.gz360.com/baojia/baojianav6403.html" title="注册下载完整造价单" class="green_line">（下载工地完整造价单）</a></li>
+                                            <li>验收结果：
+                                                竣工验收 <i class="color">良好</i><a target="_blank" href="/jianli/9090.html" class="green_line">(查看详情)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="site-listh site-listh_gd">
+                                        <a style="cursor: pointer" onclick="ShowBox('1894')" class="green_line">预约参观</a>
+                                        <p>已有<i class="color">0</i>人预约参观</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="site-list-li ">
+                            <a target="_blank" href="/gongdi/1852.html" class="site-lista">
+                                <img src="/UpLoad/Rep/6709/131391435423910787.jpg" width="110" height="110" alt="盛世江城" title="盛世江城" /><span><img src="../Images/pic-top.gif" width="110" height="110" /></span></a>
+                            <div class="site-listb">
+                                <div class="site-listc site-listc_gd">
+                                    <span class="site-listd"><a target="_blank" href="/gongdi/1852.html"><font color="#00a568">盛世江城</font></a></span>
+                                    <div class="site-list_g"><span>面积：<font>126m²</font></span><span>阶段：<font>水电工程开工巡检</font></span></div>
+                                    <a target="_blank" href="/gongdi/1852.html" class="site-liste">查看工地</a>
+                                </div>
+                                <div class="site-listf">
+                                    <div class="site-listg">
+                                        <ul>
+                                            <li><span>工长：<font>石学刚</font></span><span>监理：<font>王攀</font></span></li>
+                                            <li>合同价：<font>47199.00元</font><a target="_blank" href="http://wh.gz360.com/baojia/baojianav6224.html" title="注册下载完整造价单" class="green_line">（下载工地完整造价单）</a></li>
+                                            <li>验收结果：
+                                                水电工程验收前巡检 <i class="color">良好</i><a target="_blank" href="/jianli/8458.html" class="green_line">(查看详情)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="site-listh site-listh_gd">
+                                        <a style="cursor: pointer" onclick="ShowBox('1852')" class="green_line">预约参观</a>
+                                        <p>已有<i class="color">0</i>人预约参观</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="site-list-li last">
+                            <a target="_blank" href="/gongdi/1803.html" class="site-lista">
+                                <img src="/UpLoad/Rep/6709/131401785071144982.jpg" width="110" height="110" alt="汉口新城丶公园世家" title="汉口新城丶公园世家" /><span><img src="../Images/pic-top.gif" width="110" height="110" /></span></a>
+                            <div class="site-listb">
+                                <div class="site-listc site-listc_gd">
+                                    <span class="site-listd"><a target="_blank" href="/gongdi/1803.html"><font color="#00a568">汉口新城丶公园世家</font></a></span>
+                                    <div class="site-list_g"><span>面积：<font>120m²</font></span><span>阶段：<font>工程竣工验收</font></span></div>
+                                    <a target="_blank" href="/gongdi/1803.html" class="site-liste">查看工地</a>
+                                </div>
+                                <div class="site-listf">
+                                    <div class="site-listg">
+                                        <ul>
+                                            <li><span>工长：<font>石学刚</font></span><span>监理：<font>王攀</font></span></li>
+                                            <li>合同价：<font>67797.00元</font><a target="_blank" href="http://wh.gz360.com/baojia/list-汉口新城公园世家.html" title="注册下载完整造价单" class="green_line">（下载工地完整造价单）</a></li>
+                                            <li>验收结果：
+                                                竣工验收 <i class="color">良好</i><a target="_blank" href="/jianli/8661.html" class="green_line">(查看详情)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="site-listh site-listh_gd">
+                                        <a style="cursor: pointer" onclick="ShowBox('1803')" class="green_line">预约参观</a>
+                                        <p>已有<i class="color">0</i>人预约参观</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="site-page">
+                 <a href="gongdi1-6709.html ">首页</a> <a style="width:48px;">上一页</a> <a class="site-page-a">1</a> <a  href="gongdi2-6709.html ">2</a> <a href="gongdi3-6709.html ">3</a> <a style="width:48px;" href="gongdi2-6709.html ">下一页</a> <a href="gongdi3-6709.html ">末页</a>
+            </div>
+        </div>
+        <div class="site-c">
+            <div class="site-j mt12 site-j_yy"><div class="site-n tab_2_body" id="tab_2_body_1"><div class="site-o">预约我<span>可获得<font>免费</font>量房加设计</span></div><div class="site-p"><label for="">您的称呼</label><input id="OName" name="OName" type="text" class="site-s" placeholder="如某某先生/女士" maxlength="4"/></div><div class="site-p"><label for="">您的小区</label><input name="Community" id="Community" type="text" class="site-s" placeholder="请输入您所在的小区名称" maxlength="10"/></div><div class="site-p"><label for="">您的电话</label><input id="Tel" name="Tel" maxlength="11" type="text" class="site-s" placeholder="请输入您的手机号" /></div><div class="site-v"><input  type="button" onclick="addOrder()" value="免费预约" class="site-u" onmousemove="this.style.backgroundPosition='0 -214'" onmouseout="this.style.backgroundPosition='0 -174'" /></div><div class="phone"><img src="../Images/phone.gif" alt="" /></div></div></div>
+            <div class="site-star">
+                <div class="site-stara js_tab2 a">
+                    <a href="javascript:;" title="本月明星工长" class="site-starc site-starb" data-body_tag="#tab_3_body_0">本月明星工长</a>
+                    <a href="javascript:;" title="本月明星工地" class="site-starc" data-body_tag="#tab_3_body_1">本月明星工地</a>
+                </div>
+                <div class="site-stard tab_3_body" id="tab_3_body_0">
+                    <ul>
+                        
+                    </ul>
+                </div>
+
+                <div class="site-stard hide tab_3_body " id="tab_3_body_1">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="site-star">
+                <div class="site-new">工长石学刚最新开工工地</div>
+                <div class="site-stard">
+                    <ul>
+                        
+                        <li class="site-starf"><a target="_blank" href="/gongdi/2145.html">
+                            <img src="/UpLoad/Rep/6709/131461150179182849.jpg" width="45" height="45" alt="美联时光里" title="美联时光里" /></a> <span>
+                                <img src="../Images/1.gif" width="18" height="24" /></span>
+                            <div>
+                                <span><a target="_blank" href="/gongdi/2145.html">美联时光里</a></span> <span>98m² / 43000.00元 / 石学刚工长</span>
+                            </div>
+                        </li>
+                        
+                        <li class="site-starf"><a target="_blank" href="/gongdi/2123.html">
+                            <img src="/UpLoad/Rep/6709/131449290685380818.jpg" width="45" height="45" alt="富强熙园" title="富强熙园" /></a> <span>
+                                <img src="../Images/2.gif" width="18" height="24" /></span>
+                            <div>
+                                <span><a target="_blank" href="/gongdi/2123.html">富强熙园</a></span> <span>94m² / 44000.00元 / 石学刚工长</span>
+                            </div>
+                        </li>
+                        
+                        <li class="site-starf"><a target="_blank" href="/gongdi/2014.html">
+                            <img src="/UpLoad/Rep/6709/131457691435725896.jpg" width="45" height="45" alt="九坤新城一号" title="九坤新城一号" /></a> <span>
+                                <img src="../Images/3.gif" width="18" height="24" /></span>
+                            <div>
+                                <span><a target="_blank" href="/gongdi/2014.html">九坤新城一号</a></span> <span>85m² / 40500.00元 / 石学刚工长</span>
+                            </div>
+                        </li>
+                        
+                        <li class="site-starf"><a target="_blank" href="/gongdi/1978.html">
+                            <img src="/UpLoad/Rep/6709/131434624007899363.jpg" width="45" height="45" alt="百步厅丶百合苑" title="百步厅丶百合苑" /></a> <span>
+                                <img src="../Images/4.gif" width="18" height="24" /></span>
+                            <div>
+                                <span><a target="_blank" href="/gongdi/1978.html">百步厅丶百合苑</a></span> <span>91m² / 61500.00元 / 石学刚工长</span>
+                            </div>
+                        </li>
+                        
+                        <li class="site-starf"><a target="_blank" href="/gongdi/1942.html">
+                            <img src="/UpLoad/Rep/6709/131409590826160099.jpg" width="45" height="45" alt="美联时光里" title="美联时光里" /></a> <span>
+                                <img src="../Images/5.gif" width="18" height="24" /></span>
+                            <div>
+                                <span><a target="_blank" href="/gongdi/1942.html">美联时光里</a></span> <span>60m² / 23000.00元 / 石学刚工长</span>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+       <!--尾部-->
+    <div class="bottom-nav mt30">
+    <a target="_blank" href="/about/connect.html" rel="nofollow" >联系我们</a>| <a title="关于我们"
+        href="/about/about.html" rel="nofollow">关于我们</a>| <a target="_blank" href="/about/link.html" rel="nofollow">
+            友情链接</a>| <a target="_blank" href="/about/help.html" rel="nofollow">帮助中心</a>|
+    <a target="_blank" href="/about/jobs.html" rel="nofollow">高薪诚聘</a>| <a target="_blank"
+        href="/about/falv.html" rel="nofollow">法律申明</a>| <a target="_blank" href="/about/sitemap.html"
+            rel="nofollow">网站地图</a>| <a target="_blank" href="" tppabs="http://m.gz360.com/wh"
+            rel="nofollow">手机版</a>
+</div>
+<div class="copyright">
+     © 2017 xiaogongjiang.com 版权：武汉大工匠电子商务有限公司<br /> 大工匠 地址:武汉市东湖新技术开发区关山村保利.茉莉公馆一区9幢4层17号
+    备案号：鄂ICP备17019434号-1
+    <script type="text/javascript">        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1253376399'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/q_stat.php%3Fid%3D1253376399%26l%3D2' type='text/javascript'%3E%3C/script%3E"));</script>
+			 	<a target="_blank" href="" tppabs="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42011102000329" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="/beian.png" style="float:left;"/></a>
+		 
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "../../hm.baidu.com/hm.js-1a49dfe219178bbc406d995aa7b09728"/*tpa=http://hm.baidu.com/hm.js?1a49dfe219178bbc406d995aa7b09728*/;
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <br />
+    <!--<a  key ="54c89b2ec274e71c5265cc12"  logo_size="83x30"  logo_type="realname"  href="http://www.anquan.org" ><script src="http://static.anquan.org/static/outer/js/aq_auth.js"></script></a>-->
+</div>
+<div style="right: 106px;" class="scroll">
+    <a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false">
+        <div class="ts">
+        </div>
+    </a><a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false">
+        <div class="ts-1">
+            汉口咨询</div>
+    </a><a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false">
+        <div class="gzjm">
+            武昌咨询</div>
+    </a><a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false">
+        <div class="sjsjm">
+            汉阳咨询</div>
+    </a><a target="_blank" rel="nofollow" href="../Member/msglogin.aspx.htm" tppabs="http://xiaogongjiang.com/Member/msglogin.aspx">
+        <div class="fzjm">
+            查看报价</div>
+        </a><a target="_blank" rel="nofollow" href="../Member/msgloginforcom.aspx.htm" tppabs="http://xiaogongjiang.com/Member/msgloginforcom.aspx">
+        <div class="qzzp">
+            评价工长</div>
+    </a>
+    <div class="gt">
+    </div>
+</div>
+<!--导航-->
+<style>
+    .scroll
+    {
+        top: 217px;
+        cursor: pointer;
+        height: 150px;
+        width: 106px;
+        color: #333333;
+        position: fixed;
+        _position: absolute; /*兼容IE6*/
+        _top: expression(eval(document.documentElement.scrollTop)+500); /*700为图片距离顶部的设定距离，可以修改。不加700则图片紧贴在顶部滚动*/
+    }
+    .scroll a
+    {
+        text-decoration: none;
+    }
+    .ts
+    {
+        background: url(/images/topss.png) no-repeat 0 0 transparent;
+        height: 111px;
+    }
+    .ts-1
+    {
+        background: url(/images/topss.png) no-repeat 0 -111px transparent;
+        height: 43px;
+        line-height: 48px;
+        padding-left: 30px;
+        font-size: 14px;
+        color: #109566;
+    }
+    .ts-1:hover
+    {
+        background: url(/images/topss.png) no-repeat -106px -111px transparent;
+        color: #fff;
+    }
+    .gzjm
+    {
+        background: url(/images/topss.png) no-repeat 0 -154px transparent;
+        height: 43px;
+        line-height: 43px;
+        color: #109566;
+        padding-left: 30px;
+        font-size: 14px;
+    }
+    .gzjm:hover
+    {
+        background: url(/images/topss.png) no-repeat -106px -154px transparent;
+        color: #fff;
+    }
+    .sjsjm
+    {
+        background: url(/images/topss.png) no-repeat 0 -197px transparent;
+        height: 43px;
+        line-height: 43px;
+        padding-left: 30px;
+        font-size: 14px;
+        color: #109566;
+    }
+    .sjsjm:hover
+    {
+        background: url(/images/topss.png) no-repeat -106px -197px transparent;
+        color: #fff;
+    }
+    .fzjm
+    {
+        background: url(/images/topss.png) no-repeat 0 -240px transparent;
+        height: 43px;
+        line-height: 43px;
+        padding-left: 30px;
+        font-size: 14px;
+        color: #109566;
+    }
+    .fzjm:hover
+    {
+        background: url(/images/topss.png) no-repeat -106px -240px transparent;
+        color: #fff;
+    }
+    .qzzp
+    {
+        background: url(/images/topss.png) no-repeat -106px -283px transparent;
+        height: 43px;
+        line-height: 43px;
+        padding-left: 30px;
+        font-size: 14px;
+        color: #fff;
+    }
+    .qzzp:hover
+    {
+        background: url(/images/topss.png) no-repeat -106px -283px transparent;
+        color: #fff;
+    }
+    
+    html
+    {
+        _text-overflow: ellipsis;
+    }
+    html
+    {
+        _text-overflow: ellipsis;
+    }
+    /*解决IE6下图片抖动*/
+</style>
+<script type="text/javascript">    $(document).ready(function () {
+        
+        var isMobile = {
+            Android: function () {
+                return navigator.userAgent.match(/Android/i) ? true : false;
+            },
+            BlackBerry: function () {
+                return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+            },
+            iOS: function () {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+            },
+            Windows: function () {
+                return navigator.userAgent.match(/IEMobile/i) ? true : false;
+            },
+            any: function () {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+            }
+        };
+        var swidth = 110;
+        var fhtml = "<a href=\"http://webim.qiao.baidu.com//im/index?ucid=8017321&siteid=6916457&bid=e112e33c639e77466e327d19/"><div class=\"ts\"></div></a><a href=\"http://webim.qiao.baidu.com//im/index?ucid=8017321&siteid=6916457&bid=e112e33c639e77466e327d19/"><div class=\"ts-1\">汉口咨询</div></a><a href=\"http://webim.qiao.baidu.com//im/index?ucid=8017321&siteid=6916457&bid=e112e33c639e77466e327d19/"><div class=\"gzjm\">武昌咨询</div></a><a href=\"http://webim.qiao.baidu.com//im/index?ucid=8017321&siteid=6916457&bid=e112e33c639e77466e327d19/"><div class=\"sjsjm\">汉阳咨询</div></a><a target=\"_blank\" rel=\"nofollow\" href=\"../Member/msglogin.aspx/index.htm"/*tpa=http://wh.gz360.com/Member/msglogin.aspx/*/><div class=\"fzjm\">查看报价</div></a><a target=\"_blank\" rel=\"nofollow\" href=\"../Member/msgloginforcom.aspx/index.htm"/*tpa=http://wh.gz360.com/Member/msgloginforcom.aspx/*/><div class=\"qzzp\">评价工长</div></a><div class=\"gt\"></div>";
+        if (isMobile.any()) {
+            $(".scroll").attr("style", "right:0px");
+            swidth = 0;
+            $(".scroll").html(fhtml);
+        }
+        var show_delay;
+        var scroll_left = parseInt((document.body.offsetWidth - 1000) / 2) - swidth; //960为页面宽度
+        $(".gt").click(function () {
+            $("html,body").animate({ scrollTop: 0 }, 200);
+            //document.documentElement.scrollTop = 0;
+            //document.body.scrollTop = 0;
+        });
+        $(window).resize(function () {
+            scroll_left = parseInt((document.body.offsetWidth - 1000) / 2) - swidth;
+            $(".scroll").css("right", scroll_left);
+        });
+        reshow(scroll_left, show_delay);
+    });
+    function reshow(marign_l, show_d) {
+        $(".scroll").css("right", marign_l);
+        if ((document.documentElement.scrollTop + document.body.scrollTop) != 0) {
+            //$(".scroll").css("display", "block");
+        }
+        else {
+            //$(".scroll").css("display", "none");
+        }
+        //if (show_d) window.clearTimeout(show_d);
+        //show_d = setTimeout("reshow()", 500);
+    }
+
+    $(document).ready(function () {
+        
+    }); 
+    </script>
+	<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '../../push.zhanzhang.baidu.com/push.js'/*tpa=http://push.zhanzhang.baidu.com/push.js*/;
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+        <div class="get_box">
+        <input type="hidden" id="gdid" />
+        <a class="box_close" onclick="CloseYY()" style="cursor: pointer"></a>
+        <div class="box_tit">
+            <div>
+                预约参观
+            </div>
+        </div>
+        <div class="box_input">
+            <input type="text" placeholder="您的姓名" name="OName1" id="OName1" class="xm" />
+            <input type="text" placeholder="您的手机号" class="sj" name="OMobile1" id="OMobile1" maxlength="11" />
+            <input type="text" placeholder="参观时间 如：2014年5月" class="time" name="ODate1" id="ODate1" />
+        </div>
+        <div class="box_btn">
+            <span>预约<i class="color">参观</i>在建工地、实地考察装修质量</span> <a style="cursor: pointer" onclick="addGdOrder()"
+                class="free_yy">免费参观</a>
+        </div>
+    </div>
+
+    <link type="text/css" rel="stylesheet" href="/js/Calendar/css/calendar.css" />
+<script src="/js/Calendar/Js/calendar.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $("#nav-2").attr("class", "nav-1hover");
+     function addOrder() {
+        var oname = $("#OName").val();
+        var omobile = $("#Tel").val();
+        var community = $("#Community").val();
+        var otype = 2;
+        var square = $("#Square").val();
+        var odate = $("#ODate").val();
+        if (oname.length == 0) {
+            alert("姓名不能为空！");
+            $("#OName").focus();
+        }
+        else if (omobile.length == 0) {
+            alert("手机不能为空！");
+            $("#Tel").focus();
+        } else {
+            $.ajax({
+                async: false,
+                url: "/Ajax/Userhandle.ashx",
+                type: "post",
+                contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                data: { "type": "addorder", "OName": oname, "OMobile": omobile, "Community": community, "OType": otype, "Square": square, "ODate": odate,"OID":6709},
+                success: function (re) {
+                    if (re == "1") {
+                        alert("预约成功");
+                        $("#OName").val(""); $("#Tel").val(""); $("#Community").val("");
+                    } else if (re == "0") {
+                        alert("预约失败");
+                    }
+                    else if (re == "-1") {
+                        alert("预约数已达到上限");
+                    }
+
+                    else if (re == "-4") {
+                        alert("手机号码格式不正确");
+                        $("#Tel").focus();
+                    }
+
+                }
+
+            });
+        }
+
+    }
+    function addGdOrder() {
+            
+        var gdid = $("#gdid").val();
+        if (gdid.length > 0) {
+            oname1 = $("#OName1").val();
+            omobile1 = $("#OMobile1").val();
+            odate1 = $("#ODate1").val();                
+            otype = 3;
+        }
+        if (oname1.length == 0) {
+            alert("您的姓名不能为空！");
+            $("#OName1").focus();
+        }
+        else if (omobile1.length == 0) {
+            alert("您的手机不能为空！");
+            $("#OMobile1").focus();
+        }
+        else if (odate1.length == 0) {
+            alert("请填写你预约参观时间！");
+            $("#ODate1").focus();
+        }
+        else {
+            $.ajax({
+                async: false,
+                url: "/Ajax/Userhandle.ashx",
+                type: "post",
+                contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                data: { "type": "addorder", "OName": oname1, "OMobile": omobile1, "OType": otype, "ODate": odate1, "GDID": gdid },
+                success: function (re) {
+                    if (re == "1") {
+                        alert("预约成功");
+                        $("#OName1").val(""); $("#OMobile1").val(""); $("#ODate1").val("");
+                        $(".get_box").fadeOut();
+                    } else if (re == "0") {
+                        alert("预约失败");
+                    }
+                    else if (re == "-1") {
+                        alert("预约数已达到上限");
+                    }
+
+                    else if (re == "-4") {
+                        alert("手机号码格式不正确");
+                        $("#Tel").focus();
+                    }
+                }
+            });
+        }
+    }
+    
+</script>
+    </body>
+</html>

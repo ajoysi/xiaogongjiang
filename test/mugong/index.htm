@@ -1,0 +1,1360 @@
+﻿
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="../favico.ico" type="image/x-icon" />
+<title>
+	武汉装修施工队_金牌施工工长--大工匠武汉装修网。
+</title><meta name="keywords" content="武汉装修队,武汉施工队,武汉金牌施工工长" /><meta name="description" content="大工匠装修网汇集有众多资深武汉装修施工队及经验丰富的金牌施工工长，业主直接对接工长装修，武汉最好的装修工人任你挑选，工长带设计师免费为您上门量房出设计做报价，让您装修省钱有保障。" /><link href="/favicon.ico" rel="shortcut icon" /><link href="../Style/all.css" tppabs="http://xiaogongjiang.com/Style/all.css" rel="stylesheet" type="text/css" /><link href="../Style/list.css" tppabs="http://xiaogongjiang.com/Style/list.css" rel="stylesheet" type="text/css" />
+    <script src="../Js/jquery.min.1.8.js" tppabs="http://xiaogongjiang.com/Js/jquery.min.1.8.js" type="text/javascript"></script>
+    <link href="../Style/gzlist.css" tppabs="http://xiaogongjiang.com/Style/gzlist.css" rel="stylesheet" type="text/css" />
+    
+    <script src="../Js/common.js" tppabs="http://xiaogongjiang.com/Js/common.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function CloseYY() {
+            $(".StarDetail").hide();
+        }
+        function ShowStar() {
+            $(".StarDetail").show();
+        }
+    </script>
+</head>
+<body>
+  
+<script src="../Js/jquery.cookie.js" tppabs="http://xiaogongjiang.com/Js/jquery.cookie.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+    var SetHtml = function (name, id, username, usertype) {
+        
+        if (id == '') {
+            $("#upper-m").html("<div style=\"float:left;\">欢迎您访问大工匠！</div><div style=\"float:right;\"><a href=\"/Member/login.aspx\" title=\"工长登录\">工长登录</a><a style=\"color:#999; font-weight:normal;\">|</a><a href=\"/Member/msglogin.aspx\" title=\"查看报价\">查看报价</a><a style=\"color:#999; font-weight:normal;\">|</a><a href=\"/Member/msgloginforcom.aspx\" title=\"评价工长\">评价工长</a></div>");
+            //$("#exit").hide();
+        } else {
+
+            var typestr = "亲爱的 <span style=\"color: #00a567;\">" + (name.length > 0 ? name : username) + "</span> 欢迎您访问大工匠！<a style=\"color: #00a567;\" href=\"/member/\">进入中心</a><a  style=\"cursor:pointer;color: #00a567;\" onclick=\"$.cookie('user', null, { path: '/' });SetHtml('', '', '', '');\">退出登陆</a>"; 
+            $("#upper-m").html(typestr);
+            //$("#downmenu").append("<a id=\"exit\" style=\"cursor:pointer\" onclick=\"$.cookie('user', null, { path: '/' });SetHtml('', '', '', '');\" title=\"退出登录\" class=\"downmenu-no\">退出登录</a>");
+
+
+        }
+    };
+    $("#upper-m").ready(function () {
+        var s = $.cookie("user");
+        var qdnum = getCookie(decodeURIComponent(s), "name");
+        if (qdnum.length > 0) {
+            $("#qdnum").html(getCookie(decodeURIComponent(s), "qdnum"));
+        }
+        
+        if (s != null) SetHtml(getCookie(decodeURIComponent(s), "name"), getCookie(decodeURIComponent(s), "id"), getCookie(decodeURIComponent(s), "username"), getCookie(decodeURIComponent(s), "usertype"));
+        else SetHtml('', '', '', '');
+
+    });
+    function getCookie(cookstr, name) {//获取指定名称的cookie的值
+        var str = "";
+        var arrStr = cookstr.split("&");
+        for (var i = 0; i < arrStr.length; i++) {
+            var start = arrStr[i].indexOf("=") + 1;
+            var end = arrStr[i].length;
+            if (arrStr[i].indexOf(name) > -1) {
+                if (arrStr[i].indexOf("=") > -1) {
+                    str = arrStr[i].substr(start, end);
+                }
+            }
+        }
+        return str;
+    }
+function AddFavorite(sURL, sTitle) {
+                              try { //IE
+                                  window.external.addFavorite(sURL, sTitle);
+                              } catch (e) {
+                                  try { //Firefox
+								  obj.setAttribute("rel", "sidebar"), obj.title = title, obj.href = url;
+                                      //window.sidebar.addPanel(sTitle, sURL, "");
+                                  } catch (e) {
+                                      try {//Chrome无法自动收藏，用创建快应用程序的捷方式来替代。
+                                          createShortcut();
+                                      } catch (e) {
+                                          alert("收藏失败！请使用Ctrl+D进行添加。");
+                                      }
+                                  }
+                              }
+                          }
+	</script>
+  <!--主导航-->
+   <div class="firstxy">
+    <div class="upper">
+    <div class="upper-n">
+		<div style="float:left;"><i class="city-i"> </i><div class="slogan-s-a nav-list" style="float:left"><div class="city">
+                武汉大工匠电子商务有限公司
+            </div>
+            <div class="select-city" id="downmenu">
+                <a href="../-city=wh.htm" tppabs="http://xiaogongjiang.com/?city=wh" title="武汉">武汉</a> <a href="javascript:void0;" tppabs="http://yt.gz360.com/?city=yt" title="烟台">烟台</a>
+            </div></div>
+				</div>
+        <!-- <div class="upper-m" id="upper-m"> -->
+            <!-- </div> -->
+        <div class="upper-c">
+            <ul><li>
+                    <div class="upper-c4">
+                        咨询：17092611888</div>
+                </li>
+                <li>
+                    <div class="upper-c5">
+                        <a onClick="AddFavorite(location.href,document.title)" style="cursor:pointer;">加入收藏</a></div>
+                </li>
+                <li class="nav-list">
+                    <div class="upper-c6">
+                        <a title="网站导航">网站导航</a></div>
+                    <div class="navigation" id="downmenu1">
+                        <ul>
+                            <li>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/ask/" title="问答中心" class="downmenu-bj">问答中心</a>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/ask/list1-1-0-0.html" title="家装设计" class="downmenu-no">家装设计</a>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/ask/list1-2-0-0.html" title="装修流程" class="downmenu-no">装修流程</a>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/ask/list1-3-0-0.html" title="家居产品" class="downmenu-no">家居产品</a>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/ask/list1-4-0-0.html" title="装饰材料" class="downmenu-no"> 装饰材料</a>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/ask/list1-5-0-0.html" title="工装设计" class="downmenu-no">工装设计</a>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/ask/list1-6-0-0.html" title="房产知识" class="downmenu-no">房产知识</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/news/" title="新闻中心" class="downmenu-bj">新闻中心</a>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/news/list1-1.html" title="行业报道" class="downmenu-no">行业报道</a>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/news/list1-3.html" title="家装攻略" class="downmenu-no">家装攻略</a>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/news/list1-5.html" title="最新签约" class="downmenu-no">最新签约</a>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/news/list1-6.html" title="装修知识" class="downmenu-no">装修知识</a>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/news/list1-7.html" title="最新签约" class="downmenu-no">装修风水</a>
+                                <a target="_blank" href="javascript:void0;" tppabs="http://www.gz360.com/news/list1-8.html" title="装修建材" class="downmenu-no">装修建材</a>
+                            </li>                        
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+	<div class="header">
+    <div class="login-box pull-left">
+        <a href="../index.htm" tppabs="http://xiaogongjiang.com/" class="login mr10">
+            <img title="大工匠-装修省钱没烦恼" alt="大工匠-装修省钱没烦恼" src="../images/logo-index.png" tppabs="http://xiaogongjiang.com/images/logo-index.png" /></a>
+			<div  style="margin:-39px 0 0 160px;"><img alt="" src="../images/sublogos.png" tppabs="http://xiaogongjiang.com/images/sublogos.png" /></div>	
+		<!--<div  style=";font-size:16px; margin:-32px 0 0 160px;  height:50px;"><span style="margin:40px 0 0 0px;">砍掉装修公司中间环节，装修就是省！</span></div>-->
+    </div>
+    <div class="navbar pull-left">
+        <div>
+            <p>
+                <b>装修现场体验：</b></p>
+            <p>
+                武汉市东湖新技术开发区关山村保利.茉莉公馆一区9幢4层17号</p>
+        </div>
+    </div>
+</div>
+
+<div class="nav">
+        <div style="width: 1190px" class="nav-1 nav-gz">
+            <a title="首页" href="../index.htm" tppabs="http://xiaogongjiang.com/" id="nav-1">首页</a> 
+			<a title="找大工匠" href="index.htm" tppabs="http://xiaogongjiang.com/gongzhang/" id="nav-2">
+                找大工匠</a> 
+				<a  href="../shuidiangong/index.htm" tppabs="http://xiaogongjiang.com/shuidiangong/" id="nav-3" title="找水电工">找水电工</a>
+				<a href="../mugong/index.htm" tppabs="http://xiaogongjiang.com/mugong/"id="nav-4"  title="找木工">找木工</a> 
+		<a title="找设计师" href="../shejishi/index.htm" tppabs="http://xiaogongjiang.com/gongdi/" id="nav-5">找设计师</a>
+
+            <a title="找工长" href="../gongzhang/index.htm" tppabs="http://xiaogongjiang.com/g/" id="nav-6">找工长</a>
+
+			<a title="找施工包" href="../shigongbao/index.html" tppabs="http://xiaogongjiang.com/zb/about.html" id="nav-7">找施工包</a>
+ 			<a title="找主材包" href="../zhuchaibao/index.html" tppabs="http://xiaogongjiang.com/zb/about.html" id="nav-7">找主材包</a>
+
+ </div>
+    </div>
+</div>
+    <div class="titlebar">
+        <div class="title">
+            大工匠明星工长</div>
+        <ul class="tab-navs pull-left">
+            <li ><a href="list-0.html" tppabs="http://xiaogongjiang.com/gongzhang/list-0.html">明星工长</a></li>
+            <li ><a href="list-1.html" tppabs="http://xiaogongjiang.com/gongzhang/list-1.html">星级</a></li>
+            <li ><a href="list-2.html" tppabs="http://xiaogongjiang.com/gongzhang/list-2.html">口碑</a></li>
+            <li ><a href="list-3.html" tppabs="http://xiaogongjiang.com/gongzhang/list-3.html">施工质量</a></li>
+            <li ><a href="list-4.html" tppabs="http://xiaogongjiang.com/gongzhang/list-4.html">签单数</a></li>
+            <li ><a href="list-5.html" tppabs="http://xiaogongjiang.com/gongzhang/list-5.html">会员工长</a></li>
+        </ul>
+        <dl class="subtitle  pull-left ml30 clearfix">
+            <dt class="pull-left"></dt>
+            <dd style="display: table; height: 40px;width: 380px" class="pull-left">
+                <div style="display: table-cell; vertical-align: middle; padding-left: 100px">
+                    <input type="text" placeholder="请输入工长名或曾任职的公司" name="KeyWord" class="Search" id="KeyWord" />
+                    <input type="button" onclick="Search()" value="确认" name="BtnSearch" class="BtnSearch"
+                           id="Search" /></div>
+            </dd>
+            <script type="text/javascript">
+                function Search() {
+                    var txt = $("#KeyWord").val().trim();
+                    if (txt != "") {
+                        txt = encodeURI(txt);
+                        var url = "/gongzhang/key=" + txt + "";
+                        open(url);
+                    }
+                };
+        </script>
+        </dl>
+    </div>
+    <div id="w-bylj">
+        <div class="bylj-content">
+            <!--上本部分-->
+            <div class="bylj-content-box clearfix ">
+                
+                <div class="bylj-little-box fl ">
+                    <div class="clearfix">
+                        <div class="little-box-img fl">
+                            <a target="_blank" href="10204.html" tppabs="http://xiaogongjiang.com/gongzhang/10204.html">
+                                <img src="../UpLoad/Logo/avatars/10204/large.jpg" tppabs="http://xiaogongjiang.com/UpLoad/Logo/avatars/10204/large.jpg" style="width: 130px;
+                                    height: 130px" alt="林红涛工长" title="林红涛工长"></a></div>
+                        <div class="little-box-list fl">
+                            <ul>
+                                <li class="first-li"><a target="_blank" href="10204.html" tppabs="http://xiaogongjiang.com/gongzhang/10204.html">
+                                    林红涛</a> <em class="m_vip"></em>
+                                    <div class="wli-icon-img5">
+                                        大工匠平台认证工长</div>
+                                    <a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false"
+                                        style="background: none; width: auto; vertical-align: middle; padding-left: 20px;
+                                        cursor: pointer">
+                                        <img src="../images/online.gif" tppabs="http://xiaogongjiang.com/images/online.gif"></a> </li>
+                                
+                                <li>
+                                    <p style="cursor: pointer" onclick="ShowStar()">
+                                        <img title="三金星(星数越多，级别越高)" src="../Images/jinstar.gif" tppabs="http://xiaogongjiang.com/Images/jinstar.gif" /><img title="三金星(星数越多，级别越高)" src="../Images/jinstar.gif" tppabs="http://xiaogongjiang.com/Images/jinstar.gif" /><img title="三金星(星数越多，级别越高)" src="../Images/jinstar.gif" tppabs="http://xiaogongjiang.com/Images/jinstar.gif" /></p>
+                                </li>
+                                <li>签单均价：<span>440.48/㎡</span></li>
+                                <li>总签约数：<span><a target="_blank" href="gongdi-10204.html" tppabs="http://xiaogongjiang.com/gongzhang/gongdi-10204.html">9</a></span></li>
+                                 <li>施工质量：<span><em style="font-size: 14px; color: #ea8731" title="9.14分">
+                                    9.14分</em></span></li>
+                                
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-recommend">
+                        <div class="recommend-tittle clearfix">
+                            <p class="fl">
+                                【业主评价】</p>
+                            <div class="fl">
+                                <img src="../../static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png" tppabs="http://static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png"></div>
+                        </div>
+                        <p class="xzheight">
+                            
+                            <a href="../Comment/list-林红涛.html" tppabs="http://xiaogongjiang.com/Comment/list-林红涛.html" target="_blank">
+                                我是东原湖光里14栋业主，在此留言就是表达一下我对大工匠的林工长感谢之情。
+　　自从去年底拿到房钥匙以后我就犯愁了，找谁装修呢?装修公司大大小小，走了一家又一家，心里总是没底。有一天，我接到大工匠的电话，邀请我到你们那了解一下，我犹豫再三还是去了，那天漂亮热情的店长接待了我，详细的介绍了大工匠的情况，并参观了样板间，回家后我被公司专业化的办公环境、贴心周到的服务打动了，随后我就选择了工长林红涛。。
+　　现在我家动工将近1个月，每次去工地都能看见林工长带领的工人认认真真的工作，工地摆放整齐，工长总是想尽一切办法满足我的要求，也要感谢工程监理小查来验收时更是一丝不苟，简直就是“鸡蛋里挑骨头”。
+　　别人都说装修累得能剥一层皮，我现在要告诉大家的是，那是你们找错了人!前些时间我选择装修公司很累，而现在我轻松多了，你们真是一切从客户利益出发金牌团队、金牌的施工队伍，最专业的服务。在我们客户心中树立了良好的品牌形象！！！忠心的感谢大工匠和林工长!
+
+                                             湖光里老刘
+　                                          2017年8月3日</a>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bylj-little-box fl ">
+                    <div class="clearfix">
+                        <div class="little-box-img fl">
+                            <a target="_blank" href="4019.html" tppabs="http://xiaogongjiang.com/gongzhang/4019.html">
+                                <img src="../UpLoad/Logo/avatars/4019/large.jpg" tppabs="http://xiaogongjiang.com/UpLoad/Logo/avatars/4019/large.jpg" style="width: 130px;
+                                    height: 130px" alt="王利民工长" title="王利民工长"></a></div>
+                        <div class="little-box-list fl">
+                            <ul>
+                                <li class="first-li"><a target="_blank" href="4019.html" tppabs="http://xiaogongjiang.com/gongzhang/4019.html">
+                                    王利民</a> <em class="m_vip"></em>
+                                    <div class="wli-icon-img5">
+                                        大工匠平台认证工长</div>
+                                    <a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false"
+                                        style="background: none; width: auto; vertical-align: middle; padding-left: 20px;
+                                        cursor: pointer">
+                                        <img src="../images/online.gif" tppabs="http://xiaogongjiang.com/images/online.gif"></a> </li>
+                                
+                                <li>
+                                    <p style="cursor: pointer" onclick="ShowStar()">
+                                        <img title="二钻石(星数越多，级别越高)" src="../Images/zuanshi.gif" tppabs="http://xiaogongjiang.com/Images/zuanshi.gif" /><img title="二钻石(星数越多，级别越高)" src="../Images/zuanshi.gif" tppabs="http://xiaogongjiang.com/Images/zuanshi.gif" /></p>
+                                </li>
+                                <li>签单均价：<span>393.07/㎡</span></li>
+                                <li>总签约数：<span><a target="_blank" href="gongdi-4019.html" tppabs="http://xiaogongjiang.com/gongzhang/gongdi-4019.html">25</a></span></li>
+                                 <li>施工质量：<span><em style="font-size: 14px; color: #ea8731" title="9.24分">
+                                    9.24分</em></span></li>
+                                
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-recommend">
+                        <div class="recommend-tittle clearfix">
+                            <p class="fl">
+                                【业主评价】</p>
+                            <div class="fl">
+                                <img src="../../static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png" tppabs="http://static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png"></div>
+                        </div>
+                        <p class="xzheight">
+                            
+                            <a href="../Comment/list-王利民.html" tppabs="http://xiaogongjiang.com/Comment/list-王利民.html" target="_blank">
+                                跟王工长沟通非常舒服，每次一堆问题抛过去，他都一一耐心解答，提出的要求也都能很好完成。能有效沟通对繁琐的装修来说真是太重要了！已经做了水电验收，家里人都觉得做得很好，给王工长和水电师傅点个赞。</a>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bylj-little-box fl ">
+                    <div class="clearfix">
+                        <div class="little-box-img fl">
+                            <a target="_blank" href="1882.html" tppabs="http://xiaogongjiang.com/gongzhang/1882.html">
+                                <img src="../UpLoad/Logo/avatars/1882/large.jpg" tppabs="http://xiaogongjiang.com/UpLoad/Logo/avatars/1882/large.jpg" style="width: 130px;
+                                    height: 130px" alt="刘国平工长" title="刘国平工长"></a></div>
+                        <div class="little-box-list fl">
+                            <ul>
+                                <li class="first-li"><a target="_blank" href="1882.html" tppabs="http://xiaogongjiang.com/gongzhang/1882.html">
+                                    刘国平</a> <em class="m_vip"></em>
+                                    <div class="wli-icon-img5">
+                                        大工匠平台认证工长</div>
+                                    <a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false"
+                                        style="background: none; width: auto; vertical-align: middle; padding-left: 20px;
+                                        cursor: pointer">
+                                        <img src="../images/online.gif" tppabs="http://xiaogongjiang.com/images/online.gif"></a> </li>
+                                
+                                <li>
+                                    <p style="cursor: pointer" onclick="ShowStar()">
+                                        <img title="四金冠(星数越多，级别越高)" src="../Images/jinguan.gif" tppabs="http://xiaogongjiang.com/Images/jinguan.gif" /><img title="四金冠(星数越多，级别越高)" src="../Images/jinguan.gif" tppabs="http://xiaogongjiang.com/Images/jinguan.gif" /><img title="四金冠(星数越多，级别越高)" src="../Images/jinguan.gif" tppabs="http://xiaogongjiang.com/Images/jinguan.gif" /><img title="四金冠(星数越多，级别越高)" src="../Images/jinguan.gif" tppabs="http://xiaogongjiang.com/Images/jinguan.gif" /></p>
+                                </li>
+                                <li>签单均价：<span>489.25/㎡</span></li>
+                                <li>总签约数：<span><a target="_blank" href="gongdi-1882.html" tppabs="http://xiaogongjiang.com/gongzhang/gongdi-1882.html">68</a></span></li>
+                                 <li>施工质量：<span><em style="font-size: 14px; color: #ea8731" title="9.33分">
+                                    9.33分</em></span></li>
+                                
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-recommend">
+                        <div class="recommend-tittle clearfix">
+                            <p class="fl">
+                                【业主评价】</p>
+                            <div class="fl">
+                                <img src="../../static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png" tppabs="http://static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png"></div>
+                        </div>
+                        <p class="xzheight">
+                            
+                            <a href="../Comment/list-刘国平.html" tppabs="http://xiaogongjiang.com/Comment/list-刘国平.html" target="_blank">
+                                今天木工进场。交底和交流过程中收获很多。刘工和木工郑师傅提到很多细节需要事先考虑确认，有很多我之前还真没考虑到。
+联想之前水电交底时，刘工和水电工王师傅也主动提醒还有什么地方需要增加插座开关，主动为用户着想。
+这个感觉还真不错。赞！</a>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bylj-little-box fl ">
+                    <div class="clearfix">
+                        <div class="little-box-img fl">
+                            <a target="_blank" href="655.html" tppabs="http://xiaogongjiang.com/gongzhang/655.html">
+                                <img src="../UpLoad/Logo/avatars/655/large.jpg" tppabs="http://xiaogongjiang.com/UpLoad/Logo/avatars/655/large.jpg" style="width: 130px;
+                                    height: 130px" alt="刘利书工长" title="刘利书工长"></a></div>
+                        <div class="little-box-list fl">
+                            <ul>
+                                <li class="first-li"><a target="_blank" href="655.html" tppabs="http://xiaogongjiang.com/gongzhang/655.html">
+                                    刘利书</a> <em class="m_vip"></em>
+                                    <div class="wli-icon-img5">
+                                        大工匠平台认证工长</div>
+                                    <a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false"
+                                        style="background: none; width: auto; vertical-align: middle; padding-left: 20px;
+                                        cursor: pointer">
+                                        <img src="../images/online.gif" tppabs="http://xiaogongjiang.com/images/online.gif"></a> </li>
+                                
+                                <li>
+                                    <p style="cursor: pointer" onclick="ShowStar()">
+                                        <img title="五金冠(星数越多，级别越高)" src="../Images/jinguan.gif" tppabs="http://xiaogongjiang.com/Images/jinguan.gif" /><img title="五金冠(星数越多，级别越高)" src="../Images/jinguan.gif" tppabs="http://xiaogongjiang.com/Images/jinguan.gif" /><img title="五金冠(星数越多，级别越高)" src="../Images/jinguan.gif" tppabs="http://xiaogongjiang.com/Images/jinguan.gif" /><img title="五金冠(星数越多，级别越高)" src="../Images/jinguan.gif" tppabs="http://xiaogongjiang.com/Images/jinguan.gif" /><img title="五金冠(星数越多，级别越高)" src="../Images/jinguan.gif" tppabs="http://xiaogongjiang.com/Images/jinguan.gif" /></p>
+                                </li>
+                                <li>签单均价：<span>459.09/㎡</span></li>
+                                <li>总签约数：<span><a target="_blank" href="gongdi-655.html" tppabs="http://xiaogongjiang.com/gongzhang/gongdi-655.html">79</a></span></li>
+                                 <li>施工质量：<span><em style="font-size: 14px; color: #ea8731" title="9.43分">
+                                    9.43分</em></span></li>
+                                
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-recommend">
+                        <div class="recommend-tittle clearfix">
+                            <p class="fl">
+                                【业主评价】</p>
+                            <div class="fl">
+                                <img src="../../static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png" tppabs="http://static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png"></div>
+                        </div>
+                        <p class="xzheight">
+                            
+                            <a href="../Comment/list-刘利书.html" tppabs="http://xiaogongjiang.com/Comment/list-刘利书.html" target="_blank">
+                                刘工是个严谨负责的人，手下工人施工也很规范，特别是泥工张师傅手艺一流。</a>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bylj-little-box fl ">
+                    <div class="clearfix">
+                        <div class="little-box-img fl">
+                            <a target="_blank" href="562.html" tppabs="http://xiaogongjiang.com/gongzhang/562.html">
+                                <img src="../UpLoad/Logo/avatars/562/large.jpg" tppabs="http://xiaogongjiang.com/UpLoad/Logo/avatars/562/large.jpg" style="width: 130px;
+                                    height: 130px" alt="章爱民工长" title="章爱民工长"></a></div>
+                        <div class="little-box-list fl">
+                            <ul>
+                                <li class="first-li"><a target="_blank" href="562.html" tppabs="http://xiaogongjiang.com/gongzhang/562.html">
+                                    章爱民</a> <em class="m_vip"></em>
+                                    <div class="wli-icon-img5">
+                                        大工匠平台认证工长</div>
+                                    <a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false"
+                                        style="background: none; width: auto; vertical-align: middle; padding-left: 20px;
+                                        cursor: pointer">
+                                        <img src="../images/online.gif" tppabs="http://xiaogongjiang.com/images/online.gif"></a> </li>
+                                
+                                <li>
+                                    <p style="cursor: pointer" onclick="ShowStar()">
+                                        <img title="一皇冠(星数越多，级别越高)" src="../Images/huangguan.gif" tppabs="http://xiaogongjiang.com/Images/huangguan.gif" /></p>
+                                </li>
+                                <li>签单均价：<span>418.15/㎡</span></li>
+                                <li>总签约数：<span><a target="_blank" href="gongdi-562.html" tppabs="http://xiaogongjiang.com/gongzhang/gongdi-562.html">30</a></span></li>
+                                 <li>施工质量：<span><em style="font-size: 14px; color: #ea8731" title="9.30分">
+                                    9.30分</em></span></li>
+                                
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-recommend">
+                        <div class="recommend-tittle clearfix">
+                            <p class="fl">
+                                【业主评价】</p>
+                            <div class="fl">
+                                <img src="../../static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png" tppabs="http://static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png"></div>
+                        </div>
+                        <p class="xzheight">
+                            
+                            <a href="../Comment/list-章爱民.html" tppabs="http://xiaogongjiang.com/Comment/list-章爱民.html" target="_blank">
+                                章工长一直是我们非常信赖的好工长，对待事情认真负责，遇到问题也会第一时间帮我们解决，手下的师傅们各个都是能兵巧将，尤其是电工师傅和泥工师傅，做的活真的很不错，家里现在装修已经过半，总体看来还是很满意的，希望师傅们再接再厉，交出一份优秀的家装作品！给章工长点个赞！</a>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bylj-little-box fl ">
+                    <div class="clearfix">
+                        <div class="little-box-img fl">
+                            <a target="_blank" href="10833.html" tppabs="http://xiaogongjiang.com/gongzhang/10833.html">
+                                <img src="../UpLoad/Logo/avatars/10833/large.jpg" tppabs="http://xiaogongjiang.com/UpLoad/Logo/avatars/10833/large.jpg" style="width: 130px;
+                                    height: 130px" alt="程又元工长" title="程又元工长"></a></div>
+                        <div class="little-box-list fl">
+                            <ul>
+                                <li class="first-li"><a target="_blank" href="10833.html" tppabs="http://xiaogongjiang.com/gongzhang/10833.html">
+                                    程又元</a> <em class="m_vip"></em>
+                                    <div class="wli-icon-img5">
+                                        大工匠平台认证工长</div>
+                                    <a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false"
+                                        style="background: none; width: auto; vertical-align: middle; padding-left: 20px;
+                                        cursor: pointer">
+                                        <img src="../images/online.gif" tppabs="http://xiaogongjiang.com/images/online.gif"></a> </li>
+                                
+                                <li>
+                                    <p style="cursor: pointer" onclick="ShowStar()">
+                                        <img title="三金星(星数越多，级别越高)" src="../Images/jinstar.gif" tppabs="http://xiaogongjiang.com/Images/jinstar.gif" /><img title="三金星(星数越多，级别越高)" src="../Images/jinstar.gif" tppabs="http://xiaogongjiang.com/Images/jinstar.gif" /><img title="三金星(星数越多，级别越高)" src="../Images/jinstar.gif" tppabs="http://xiaogongjiang.com/Images/jinstar.gif" /></p>
+                                </li>
+                                <li>签单均价：<span>362.73/㎡</span></li>
+                                <li>总签约数：<span><a target="_blank" href="gongdi-10833.html" tppabs="http://xiaogongjiang.com/gongzhang/gongdi-10833.html">9</a></span></li>
+                                 <li>施工质量：<span><em style="font-size: 14px; color: #ea8731" title="9.16分">
+                                    9.16分</em></span></li>
+                                
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-recommend">
+                        <div class="recommend-tittle clearfix">
+                            <p class="fl">
+                                【业主评价】</p>
+                            <div class="fl">
+                                <img src="../../static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png" tppabs="http://static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png"></div>
+                        </div>
+                        <p class="xzheight">
+                            
+                            <a href="../Comment/list-程又元.html" tppabs="http://xiaogongjiang.com/Comment/list-程又元.html" target="_blank">
+                                初次接触，程工长还是蛮负责的，怕我忙不过来亲自带我去看小东门看材料，顶着40度的高温，点赞，希望后面每一项都能顺利通过验收，敬请关注</a>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bylj-little-box fl ">
+                    <div class="clearfix">
+                        <div class="little-box-img fl">
+                            <a target="_blank" href="11248.html" tppabs="http://xiaogongjiang.com/gongzhang/11248.html">
+                                <img src="../UpLoad/Logo/avatars/11248/large.jpg" tppabs="http://xiaogongjiang.com/UpLoad/Logo/avatars/11248/large.jpg" style="width: 130px;
+                                    height: 130px" alt="吴星兵工长" title="吴星兵工长"></a></div>
+                        <div class="little-box-list fl">
+                            <ul>
+                                <li class="first-li"><a target="_blank" href="11248.html" tppabs="http://xiaogongjiang.com/gongzhang/11248.html">
+                                    吴星兵</a> <em class="m_vip"></em>
+                                    <div class="wli-icon-img5">
+                                        大工匠平台认证工长</div>
+                                    <a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false"
+                                        style="background: none; width: auto; vertical-align: middle; padding-left: 20px;
+                                        cursor: pointer">
+                                        <img src="../images/online.gif" tppabs="http://xiaogongjiang.com/images/online.gif"></a> </li>
+                                
+                                <li>
+                                    <p style="cursor: pointer" onclick="ShowStar()">
+                                        <img title="二钻石(星数越多，级别越高)" src="../Images/zuanshi.gif" tppabs="http://xiaogongjiang.com/Images/zuanshi.gif" /><img title="二钻石(星数越多，级别越高)" src="../Images/zuanshi.gif" tppabs="http://xiaogongjiang.com/Images/zuanshi.gif" /></p>
+                                </li>
+                                <li>签单均价：<span>525.27/㎡</span></li>
+                                <li>总签约数：<span><a target="_blank" href="gongdi-11248.html" tppabs="http://xiaogongjiang.com/gongzhang/gongdi-11248.html">12</a></span></li>
+                                 <li>施工质量：<span><em style="font-size: 14px; color: #ea8731" title="9.06分">
+                                    9.06分</em></span></li>
+                                
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-recommend">
+                        <div class="recommend-tittle clearfix">
+                            <p class="fl">
+                                【业主评价】</p>
+                            <div class="fl">
+                                <img src="../../static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png" tppabs="http://static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png"></div>
+                        </div>
+                        <p class="xzheight">
+                            
+                            <a href="../Comment/list-吴星兵.html" tppabs="http://xiaogongjiang.com/Comment/list-吴星兵.html" target="_blank">
+                                吴星兵工长，服务非常好，值得信赖！工作细致，周到热情，认真负责，很好沟通，为人和气。认真听取用户意见。提出合理建议，帮助用户完善装修过程。他带领的师傅，无论泥工，水电工，油漆工都很专业，也很负责。手艺不错。用户如果工作忙，装修可以完全放心交给吴工长打理。希望360公司对吴工长予以表扬，向用户推荐。
+      对公司其他人我也说几句。负责设计我家装修工程的汪静工程师，专业热情 ；负责检查的王姜工程师，检查验收一丝不苟；负责我家装修项目经理范先振先生，很好的协调监督装修过程。我对大工匠工作很满意。希望大工匠事业越做越大，更好为大众服务。
+   。</a>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bylj-little-box fl ">
+                    <div class="clearfix">
+                        <div class="little-box-img fl">
+                            <a target="_blank" href="15874.html" tppabs="http://xiaogongjiang.com/gongzhang/15874.html">
+                                <img src="../UpLoad/Logo/avatars/15874/large.jpg" tppabs="http://xiaogongjiang.com/UpLoad/Logo/avatars/15874/large.jpg" style="width: 130px;
+                                    height: 130px" alt="徐进工长" title="徐进工长"></a></div>
+                        <div class="little-box-list fl">
+                            <ul>
+                                <li class="first-li"><a target="_blank" href="15874.html" tppabs="http://xiaogongjiang.com/gongzhang/15874.html">
+                                    徐进</a> <em class="m_vip"></em>
+                                    <div class="wli-icon-img5">
+                                        大工匠平台认证工长</div>
+                                    <a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false"
+                                        style="background: none; width: auto; vertical-align: middle; padding-left: 20px;
+                                        cursor: pointer">
+                                        <img src="../images/online.gif" tppabs="http://xiaogongjiang.com/images/online.gif"></a> </li>
+                                
+                                <li>
+                                    <p style="cursor: pointer" onclick="ShowStar()">
+                                        <img title="二银星(星数越多，级别越高)" src="../Images/yinstar.gif" tppabs="http://xiaogongjiang.com/Images/yinstar.gif" /><img title="二银星(星数越多，级别越高)" src="../Images/yinstar.gif" tppabs="http://xiaogongjiang.com/Images/yinstar.gif" /></p>
+                                </li>
+                                <li>签单均价：<span>494.51/㎡</span></li>
+                                <li>总签约数：<span><a target="_blank" href="gongdi-15874.html" tppabs="http://xiaogongjiang.com/gongzhang/gongdi-15874.html">1</a></span></li>
+                                 <li>施工质量：<span><em style="font-size: 14px; color: #ea8731" title="9.0分">
+                                    9.0分</em></span></li>
+                                
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-recommend">
+                        <div class="recommend-tittle clearfix">
+                            <p class="fl">
+                                【业主评价】</p>
+                            <div class="fl">
+                                <img src="../../static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png" tppabs="http://static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png"></div>
+                        </div>
+                        <p class="xzheight">
+                            
+                            <a href="../Comment/list-徐进.html" tppabs="http://xiaogongjiang.com/Comment/list-徐进.html" target="_blank">
+                                工长做事挺认真的，施工质量进度还可以。</a>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bylj-little-box fl ">
+                    <div class="clearfix">
+                        <div class="little-box-img fl">
+                            <a target="_blank" href="188.html" tppabs="http://xiaogongjiang.com/gongzhang/188.html">
+                                <img src="../UpLoad/Logo/avatars/188/large.jpg" tppabs="http://xiaogongjiang.com/UpLoad/Logo/avatars/188/large.jpg" style="width: 130px;
+                                    height: 130px" alt="胡荣兵工长" title="胡荣兵工长"></a></div>
+                        <div class="little-box-list fl">
+                            <ul>
+                                <li class="first-li"><a target="_blank" href="188.html" tppabs="http://xiaogongjiang.com/gongzhang/188.html">
+                                    胡荣兵</a> <em class="m_vip"></em>
+                                    <div class="wli-icon-img5">
+                                        大工匠平台认证工长</div>
+                                    <a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false"
+                                        style="background: none; width: auto; vertical-align: middle; padding-left: 20px;
+                                        cursor: pointer">
+                                        <img src="../images/online.gif" tppabs="http://xiaogongjiang.com/images/online.gif"></a> </li>
+                                
+                                <li>
+                                    <p style="cursor: pointer" onclick="ShowStar()">
+                                        <img title="四皇冠(星数越多，级别越高)" src="../Images/huangguan.gif" tppabs="http://xiaogongjiang.com/Images/huangguan.gif" /><img title="四皇冠(星数越多，级别越高)" src="../Images/huangguan.gif" tppabs="http://xiaogongjiang.com/Images/huangguan.gif" /><img title="四皇冠(星数越多，级别越高)" src="../Images/huangguan.gif" tppabs="http://xiaogongjiang.com/Images/huangguan.gif" /><img title="四皇冠(星数越多，级别越高)" src="../Images/huangguan.gif" tppabs="http://xiaogongjiang.com/Images/huangguan.gif" /></p>
+                                </li>
+                                <li>签单均价：<span>404.71/㎡</span></li>
+                                <li>总签约数：<span><a target="_blank" href="gongdi-188.html" tppabs="http://xiaogongjiang.com/gongzhang/gongdi-188.html">51</a></span></li>
+                                 <li>施工质量：<span><em style="font-size: 14px; color: #ea8731" title="9.28分">
+                                    9.28分</em></span></li>
+                                
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-recommend">
+                        <div class="recommend-tittle clearfix">
+                            <p class="fl">
+                                【业主评价】</p>
+                            <div class="fl">
+                                <img src="../../static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png" tppabs="http://static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png"></div>
+                        </div>
+                        <p class="xzheight">
+                            
+                            <a href="../Comment/list-胡荣兵.html" tppabs="http://xiaogongjiang.com/Comment/list-胡荣兵.html" target="_blank">
+                                我家目前水电已经验收，非常满意！胡工长做事认真负责，发现了我家主卫漏水情况，并及时告知维修，在此表示特别感谢！态度和施工质量都是一流的，好评！</a>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bylj-little-box fl ">
+                    <div class="clearfix">
+                        <div class="little-box-img fl">
+                            <a target="_blank" href="6709.html" tppabs="http://xiaogongjiang.com/gongzhang/6709.html">
+                                <img src="../UpLoad/Logo/avatars/6709/large.jpg" tppabs="http://xiaogongjiang.com/UpLoad/Logo/avatars/6709/large.jpg" style="width: 130px;
+                                    height: 130px" alt="石学刚工长" title="石学刚工长"></a></div>
+                        <div class="little-box-list fl">
+                            <ul>
+                                <li class="first-li"><a target="_blank" href="6709.html" tppabs="http://xiaogongjiang.com/gongzhang/6709.html">
+                                    石学刚</a> <em class="m_vip"></em>
+                                    <div class="wli-icon-img5">
+                                        大工匠平台认证工长</div>
+                                    <a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false"
+                                        style="background: none; width: auto; vertical-align: middle; padding-left: 20px;
+                                        cursor: pointer">
+                                        <img src="../images/online.gif" tppabs="http://xiaogongjiang.com/images/online.gif"></a> </li>
+                                
+                                <li>
+                                    <p style="cursor: pointer" onclick="ShowStar()">
+                                        <img title="四钻石(星数越多，级别越高)" src="../Images/zuanshi.gif" tppabs="http://xiaogongjiang.com/Images/zuanshi.gif" /><img title="四钻石(星数越多，级别越高)" src="../Images/zuanshi.gif" tppabs="http://xiaogongjiang.com/Images/zuanshi.gif" /><img title="四钻石(星数越多，级别越高)" src="../Images/zuanshi.gif" tppabs="http://xiaogongjiang.com/Images/zuanshi.gif" /><img title="四钻石(星数越多，级别越高)" src="../Images/zuanshi.gif" tppabs="http://xiaogongjiang.com/Images/zuanshi.gif" /></p>
+                                </li>
+                                <li>签单均价：<span>448.84/㎡</span></li>
+                                <li>总签约数：<span><a target="_blank" href="gongdi-6709.html" tppabs="http://xiaogongjiang.com/gongzhang/gongdi-6709.html">24</a></span></li>
+                                 <li>施工质量：<span><em style="font-size: 14px; color: #ea8731" title="9.31分">
+                                    9.31分</em></span></li>
+                                
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-recommend">
+                        <div class="recommend-tittle clearfix">
+                            <p class="fl">
+                                【业主评价】</p>
+                            <div class="fl">
+                                <img src="../../static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png" tppabs="http://static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png"></div>
+                        </div>
+                        <p class="xzheight">
+                            
+                            <a href="../Comment/list-石学刚.html" tppabs="http://xiaogongjiang.com/Comment/list-石学刚.html" target="_blank">
+                                装修已经竣工，感谢石总和其团队的努力，效果和预计效果一样，祝360越办越好</a>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bylj-little-box fl ">
+                    <div class="clearfix">
+                        <div class="little-box-img fl">
+                            <a target="_blank" href="14318.html" tppabs="http://xiaogongjiang.com/gongzhang/14318.html">
+                                <img src="../UpLoad/Logo/avatars/14318/large.jpg" tppabs="http://xiaogongjiang.com/UpLoad/Logo/avatars/14318/large.jpg" style="width: 130px;
+                                    height: 130px" alt="刘青工长" title="刘青工长"></a></div>
+                        <div class="little-box-list fl">
+                            <ul>
+                                <li class="first-li"><a target="_blank" href="14318.html" tppabs="http://xiaogongjiang.com/gongzhang/14318.html">
+                                    刘青</a> <em class="m_vip"></em>
+                                    <div class="wli-icon-img5">
+                                        大工匠平台认证工长</div>
+                                    <a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false"
+                                        style="background: none; width: auto; vertical-align: middle; padding-left: 20px;
+                                        cursor: pointer">
+                                        <img src="../images/online.gif" tppabs="http://xiaogongjiang.com/images/online.gif"></a> </li>
+                                
+                                <li>
+                                    <p style="cursor: pointer" onclick="ShowStar()">
+                                        <img title="三金星(星数越多，级别越高)" src="../Images/jinstar.gif" tppabs="http://xiaogongjiang.com/Images/jinstar.gif" /><img title="三金星(星数越多，级别越高)" src="../Images/jinstar.gif" tppabs="http://xiaogongjiang.com/Images/jinstar.gif" /><img title="三金星(星数越多，级别越高)" src="../Images/jinstar.gif" tppabs="http://xiaogongjiang.com/Images/jinstar.gif" /></p>
+                                </li>
+                                <li>签单均价：<span>436.53/㎡</span></li>
+                                <li>总签约数：<span><a target="_blank" href="gongdi-14318.html" tppabs="http://xiaogongjiang.com/gongzhang/gongdi-14318.html">9</a></span></li>
+                                 <li>施工质量：<span><em style="font-size: 14px; color: #ea8731" title="9.15分">
+                                    9.15分</em></span></li>
+                                
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-recommend">
+                        <div class="recommend-tittle clearfix">
+                            <p class="fl">
+                                【业主评价】</p>
+                            <div class="fl">
+                                <img src="../../static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png" tppabs="http://static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png"></div>
+                        </div>
+                        <p class="xzheight">
+                            
+                            <a href="../Comment/list-刘青.html" tppabs="http://xiaogongjiang.com/Comment/list-刘青.html" target="_blank">
+                                刘师傅，做事认真可靠，值得信赖。</a>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bylj-little-box fl ">
+                    <div class="clearfix">
+                        <div class="little-box-img fl">
+                            <a target="_blank" href="12919.html" tppabs="http://xiaogongjiang.com/gongzhang/12919.html">
+                                <img src="../UpLoad/Logo/avatars/12919/large.jpg" tppabs="http://xiaogongjiang.com/UpLoad/Logo/avatars/12919/large.jpg" style="width: 130px;
+                                    height: 130px" alt="王林工长" title="王林工长"></a></div>
+                        <div class="little-box-list fl">
+                            <ul>
+                                <li class="first-li"><a target="_blank" href="12919.html" tppabs="http://xiaogongjiang.com/gongzhang/12919.html">
+                                    王林</a> <em class="m_vip"></em>
+                                    <div class="wli-icon-img5">
+                                        大工匠平台认证工长</div>
+                                    <a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false"
+                                        style="background: none; width: auto; vertical-align: middle; padding-left: 20px;
+                                        cursor: pointer">
+                                        <img src="../images/online.gif" tppabs="http://xiaogongjiang.com/images/online.gif"></a> </li>
+                                
+                                <li>
+                                    <p style="cursor: pointer" onclick="ShowStar()">
+                                        <img title="二金星(星数越多，级别越高)" src="../Images/jinstar.gif" tppabs="http://xiaogongjiang.com/Images/jinstar.gif" /><img title="二金星(星数越多，级别越高)" src="../Images/jinstar.gif" tppabs="http://xiaogongjiang.com/Images/jinstar.gif" /></p>
+                                </li>
+                                <li>签单均价：<span>557.97/㎡</span></li>
+                                <li>总签约数：<span><a target="_blank" href="gongdi-12919.html" tppabs="http://xiaogongjiang.com/gongzhang/gongdi-12919.html">7</a></span></li>
+                                 <li>施工质量：<span><em style="font-size: 14px; color: #ea8731" title="9.17分">
+                                    9.17分</em></span></li>
+                                
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-recommend">
+                        <div class="recommend-tittle clearfix">
+                            <p class="fl">
+                                【业主评价】</p>
+                            <div class="fl">
+                                <img src="../../static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png" tppabs="http://static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png"></div>
+                        </div>
+                        <p class="xzheight">
+                            
+                            <a href="../Comment/list-王林.html" tppabs="http://xiaogongjiang.com/Comment/list-王林.html" target="_blank">
+                                态度和施工质量都是一流的，好评！</a>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bylj-little-box fl ">
+                    <div class="clearfix">
+                        <div class="little-box-img fl">
+                            <a target="_blank" href="8376.html" tppabs="http://xiaogongjiang.com/gongzhang/8376.html">
+                                <img src="../UpLoad/Logo/avatars/8376/large.jpg" tppabs="http://xiaogongjiang.com/UpLoad/Logo/avatars/8376/large.jpg" style="width: 130px;
+                                    height: 130px" alt="代小迪工长" title="代小迪工长"></a></div>
+                        <div class="little-box-list fl">
+                            <ul>
+                                <li class="first-li"><a target="_blank" href="8376.html" tppabs="http://xiaogongjiang.com/gongzhang/8376.html">
+                                    代小迪</a> <em class="m_vip"></em>
+                                    <div class="wli-icon-img5">
+                                        大工匠平台认证工长</div>
+                                    <a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false"
+                                        style="background: none; width: auto; vertical-align: middle; padding-left: 20px;
+                                        cursor: pointer">
+                                        <img src="../images/online.gif" tppabs="http://xiaogongjiang.com/images/online.gif"></a> </li>
+                                
+                                <li>
+                                    <p style="cursor: pointer" onclick="ShowStar()">
+                                        <img title="一钻石(星数越多，级别越高)" src="../Images/zuanshi.gif" tppabs="http://xiaogongjiang.com/Images/zuanshi.gif" /></p>
+                                </li>
+                                <li>签单均价：<span>399.98/㎡</span></li>
+                                <li>总签约数：<span><a target="_blank" href="gongdi-8376.html" tppabs="http://xiaogongjiang.com/gongzhang/gongdi-8376.html">19</a></span></li>
+                                 <li>施工质量：<span><em style="font-size: 14px; color: #ea8731" title="9.24分">
+                                    9.24分</em></span></li>
+                                
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-recommend">
+                        <div class="recommend-tittle clearfix">
+                            <p class="fl">
+                                【业主评价】</p>
+                            <div class="fl">
+                                <img src="../../static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png" tppabs="http://static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png"></div>
+                        </div>
+                        <p class="xzheight">
+                            
+                            <a href="../Comment/list-代小迪.html" tppabs="http://xiaogongjiang.com/Comment/list-代小迪.html" target="_blank">
+                                办事认真，什么都亲力亲为，还蛮有亲和力，感谢代师傅</a>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bylj-little-box fl ">
+                    <div class="clearfix">
+                        <div class="little-box-img fl">
+                            <a target="_blank" href="5052.html" tppabs="http://xiaogongjiang.com/gongzhang/5052.html">
+                                <img src="../UpLoad/Logo/avatars/5052/large.jpg" tppabs="http://xiaogongjiang.com/UpLoad/Logo/avatars/5052/large.jpg" style="width: 130px;
+                                    height: 130px" alt="李君工长" title="李君工长"></a></div>
+                        <div class="little-box-list fl">
+                            <ul>
+                                <li class="first-li"><a target="_blank" href="5052.html" tppabs="http://xiaogongjiang.com/gongzhang/5052.html">
+                                    李君</a> <em class="m_vip"></em>
+                                    <div class="wli-icon-img5">
+                                        大工匠平台认证工长</div>
+                                    <a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false"
+                                        style="background: none; width: auto; vertical-align: middle; padding-left: 20px;
+                                        cursor: pointer">
+                                        <img src="../images/online.gif" tppabs="http://xiaogongjiang.com/images/online.gif"></a> </li>
+                                
+                                <li>
+                                    <p style="cursor: pointer" onclick="ShowStar()">
+                                        <img title="一皇冠(星数越多，级别越高)" src="../Images/huangguan.gif" tppabs="http://xiaogongjiang.com/Images/huangguan.gif" /></p>
+                                </li>
+                                <li>签单均价：<span>449.18/㎡</span></li>
+                                <li>总签约数：<span><a target="_blank" href="gongdi-5052.html" tppabs="http://xiaogongjiang.com/gongzhang/gongdi-5052.html">33</a></span></li>
+                                 <li>施工质量：<span><em style="font-size: 14px; color: #ea8731" title="9.17分">
+                                    9.17分</em></span></li>
+                                
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-recommend">
+                        <div class="recommend-tittle clearfix">
+                            <p class="fl">
+                                【业主评价】</p>
+                            <div class="fl">
+                                <img src="../../static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png" tppabs="http://static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png"></div>
+                        </div>
+                        <p class="xzheight">
+                            
+                            <a href="../Comment/list-李君.html" tppabs="http://xiaogongjiang.com/Comment/list-李君.html" target="_blank">
+                                服务真棒，合作很愉快！</a>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bylj-little-box fl ">
+                    <div class="clearfix">
+                        <div class="little-box-img fl">
+                            <a target="_blank" href="6598.html" tppabs="http://xiaogongjiang.com/gongzhang/6598.html">
+                                <img src="../UpLoad/Logo/avatars/6598/large.jpg" tppabs="http://xiaogongjiang.com/UpLoad/Logo/avatars/6598/large.jpg" style="width: 130px;
+                                    height: 130px" alt="张伟工长" title="张伟工长"></a></div>
+                        <div class="little-box-list fl">
+                            <ul>
+                                <li class="first-li"><a target="_blank" href="6598.html" tppabs="http://xiaogongjiang.com/gongzhang/6598.html">
+                                    张伟</a> <em class="m_vip"></em>
+                                    <div class="wli-icon-img5">
+                                        大工匠平台认证工长</div>
+                                    <a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false"
+                                        style="background: none; width: auto; vertical-align: middle; padding-left: 20px;
+                                        cursor: pointer">
+                                        <img src="../images/online.gif" tppabs="http://xiaogongjiang.com/images/online.gif"></a> </li>
+                                
+                                <li>
+                                    <p style="cursor: pointer" onclick="ShowStar()">
+                                        <img title="二钻石(星数越多，级别越高)" src="../Images/zuanshi.gif" tppabs="http://xiaogongjiang.com/Images/zuanshi.gif" /><img title="二钻石(星数越多，级别越高)" src="../Images/zuanshi.gif" tppabs="http://xiaogongjiang.com/Images/zuanshi.gif" /></p>
+                                </li>
+                                <li>签单均价：<span>448.90/㎡</span></li>
+                                <li>总签约数：<span><a target="_blank" href="gongdi-6598.html" tppabs="http://xiaogongjiang.com/gongzhang/gongdi-6598.html">18</a></span></li>
+                                 <li>施工质量：<span><em style="font-size: 14px; color: #ea8731" title="9.25分">
+                                    9.25分</em></span></li>
+                                
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-recommend">
+                        <div class="recommend-tittle clearfix">
+                            <p class="fl">
+                                【业主评价】</p>
+                            <div class="fl">
+                                <img src="../../static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png" tppabs="http://static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png"></div>
+                        </div>
+                        <p class="xzheight">
+                            
+                            <a href="../Comment/list-张伟.html" tppabs="http://xiaogongjiang.com/Comment/list-张伟.html" target="_blank">
+                                张伟工长是一位很好沟通的人，他不会要跟你多拆一个门就要多收你钱，也不会帮你采购个东西就漫天要价，我们也便相信他。现在工期完成了水电施工，后期的施工有序地进行，相信我们也会相处愉快的！</a>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bylj-little-box fl ">
+                    <div class="clearfix">
+                        <div class="little-box-img fl">
+                            <a target="_blank" href="8336.html" tppabs="http://xiaogongjiang.com/gongzhang/8336.html">
+                                <img src="../UpLoad/Logo/avatars/8336/large.jpg" tppabs="http://xiaogongjiang.com/UpLoad/Logo/avatars/8336/large.jpg" style="width: 130px;
+                                    height: 130px" alt="袁在军工长" title="袁在军工长"></a></div>
+                        <div class="little-box-list fl">
+                            <ul>
+                                <li class="first-li"><a target="_blank" href="8336.html" tppabs="http://xiaogongjiang.com/gongzhang/8336.html">
+                                    袁在军</a> <em class="m_vip"></em>
+                                    <div class="wli-icon-img5">
+                                        大工匠平台认证工长</div>
+                                    <a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false"
+                                        style="background: none; width: auto; vertical-align: middle; padding-left: 20px;
+                                        cursor: pointer">
+                                        <img src="../images/online.gif" tppabs="http://xiaogongjiang.com/images/online.gif"></a> </li>
+                                
+                                <li>
+                                    <p style="cursor: pointer" onclick="ShowStar()">
+                                        <img title="四金星(星数越多，级别越高)" src="../Images/jinstar.gif" tppabs="http://xiaogongjiang.com/Images/jinstar.gif" /><img title="四金星(星数越多，级别越高)" src="../Images/jinstar.gif" tppabs="http://xiaogongjiang.com/Images/jinstar.gif" /><img title="四金星(星数越多，级别越高)" src="../Images/jinstar.gif" tppabs="http://xiaogongjiang.com/Images/jinstar.gif" /><img title="四金星(星数越多，级别越高)" src="../Images/jinstar.gif" tppabs="http://xiaogongjiang.com/Images/jinstar.gif" /></p>
+                                </li>
+                                <li>签单均价：<span>401.19/㎡</span></li>
+                                <li>总签约数：<span><a target="_blank" href="gongdi-8336.html" tppabs="http://xiaogongjiang.com/gongzhang/gongdi-8336.html">8</a></span></li>
+                                 <li>施工质量：<span><em style="font-size: 14px; color: #ea8731" title="9.28分">
+                                    9.28分</em></span></li>
+                                
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-recommend">
+                        <div class="recommend-tittle clearfix">
+                            <p class="fl">
+                                【业主评价】</p>
+                            <div class="fl">
+                                <img src="../../static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png" tppabs="http://static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png"></div>
+                        </div>
+                        <p class="xzheight">
+                            
+                            <a href="../Comment/list-袁在军.html" tppabs="http://xiaogongjiang.com/Comment/list-袁在军.html" target="_blank">
+                                水电已验收，邻居过来看，都说走线走得不错！！~~</a>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bylj-little-box fl ">
+                    <div class="clearfix">
+                        <div class="little-box-img fl">
+                            <a target="_blank" href="4108.html" tppabs="http://xiaogongjiang.com/gongzhang/4108.html">
+                                <img src="../UpLoad/Logo/avatars/4108/large.jpg" tppabs="http://xiaogongjiang.com/UpLoad/Logo/avatars/4108/large.jpg" style="width: 130px;
+                                    height: 130px" alt="范茂军工长" title="范茂军工长"></a></div>
+                        <div class="little-box-list fl">
+                            <ul>
+                                <li class="first-li"><a target="_blank" href="4108.html" tppabs="http://xiaogongjiang.com/gongzhang/4108.html">
+                                    范茂军</a> <em class="m_vip"></em>
+                                    <div class="wli-icon-img5">
+                                        大工匠平台认证工长</div>
+                                    <a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false"
+                                        style="background: none; width: auto; vertical-align: middle; padding-left: 20px;
+                                        cursor: pointer">
+                                        <img src="../images/online.gif" tppabs="http://xiaogongjiang.com/images/online.gif"></a> </li>
+                                
+                                <li>
+                                    <p style="cursor: pointer" onclick="ShowStar()">
+                                        <img title="三银星(星数越多，级别越高)" src="../Images/yinstar.gif" tppabs="http://xiaogongjiang.com/Images/yinstar.gif" /><img title="三银星(星数越多，级别越高)" src="../Images/yinstar.gif" tppabs="http://xiaogongjiang.com/Images/yinstar.gif" /><img title="三银星(星数越多，级别越高)" src="../Images/yinstar.gif" tppabs="http://xiaogongjiang.com/Images/yinstar.gif" /></p>
+                                </li>
+                                <li>签单均价：<span>579.38/㎡</span></li>
+                                <li>总签约数：<span><a target="_blank" href="gongdi-4108.html" tppabs="http://xiaogongjiang.com/gongzhang/gongdi-4108.html">2</a></span></li>
+                                 <li>施工质量：<span><em style="font-size: 14px; color: #ea8731" title="9.0分">
+                                    9.0分</em></span></li>
+                                
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-recommend">
+                        <div class="recommend-tittle clearfix">
+                            <p class="fl">
+                                【业主评价】</p>
+                            <div class="fl">
+                                <img src="../../static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png" tppabs="http://static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png"></div>
+                        </div>
+                        <p class="xzheight">
+                            
+                            <a href="../Comment/list-范茂军.html" tppabs="http://xiaogongjiang.com/Comment/list-范茂军.html" target="_blank">
+                                范工长为人和善。施工队伍还比较规范是个好工长！大家选他没错！</a>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bylj-little-box fl ">
+                    <div class="clearfix">
+                        <div class="little-box-img fl">
+                            <a target="_blank" href="javascript:void0;" tppabs="http://xiaogongjiang.com/gongzhang/3038.html">
+                                <img src="../UpLoad/Logo/avatars/3038/large.jpg" tppabs="http://xiaogongjiang.com/UpLoad/Logo/avatars/3038/large.jpg" style="width: 130px;
+                                    height: 130px" alt="黄永兵工长" title="黄永兵工长"></a></div>
+                        <div class="little-box-list fl">
+                            <ul>
+                                <li class="first-li"><a target="_blank" href="javascript:void0;" tppabs="http://xiaogongjiang.com/gongzhang/3038.html">
+                                    黄永兵</a> <em class="m_vip"></em>
+                                    <div class="wli-icon-img5">
+                                        大工匠平台认证工长</div>
+                                    <a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false"
+                                        style="background: none; width: auto; vertical-align: middle; padding-left: 20px;
+                                        cursor: pointer">
+                                        <img src="../images/online.gif" tppabs="http://xiaogongjiang.com/images/online.gif"></a> </li>
+                                
+                                <li>
+                                    <p style="cursor: pointer" onclick="ShowStar()">
+                                        <img title="一皇冠(星数越多，级别越高)" src="../Images/huangguan.gif" tppabs="http://xiaogongjiang.com/Images/huangguan.gif" /></p>
+                                </li>
+                                <li>签单均价：<span>416.57/㎡</span></li>
+                                <li>总签约数：<span><a target="_blank" href="gongdi-3038.html" tppabs="http://xiaogongjiang.com/gongzhang/gongdi-3038.html">37</a></span></li>
+                                 <li>施工质量：<span><em style="font-size: 14px; color: #ea8731" title="9.26分">
+                                    9.26分</em></span></li>
+                                
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-recommend">
+                        <div class="recommend-tittle clearfix">
+                            <p class="fl">
+                                【业主评价】</p>
+                            <div class="fl">
+                                <img src="../../static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png" tppabs="http://static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png"></div>
+                        </div>
+                        <p class="xzheight">
+                            
+                            <a href="../Comment/list-黄永兵.html" tppabs="http://xiaogongjiang.com/Comment/list-黄永兵.html" target="_blank">
+                                选择了大工匠的基础工程，重点关注了企业的口碑和签单量，确实如宣传所讲，没有中间商赚差价，这点可以完全放心，所有的项目都是明码标价，按实结算。工长分为不同的等级，等级越高的会收取一定程度的星级费用，当然星星越多费用就越多，是不是代表业务水平越高就仁者见仁智者见智了。
+负责我装修的项目经理是黄工，属于星级工长，签单的业务量也比较多，武昌、汉阳都有，据说很多人都是他的老客户推荐的，由此可见一斑。从我接触他的这段时间来看已经有好几个项目开工了，虽然项目多，但基本上能满足我对施工的进度要求，质量上也还不错，这点得到了专业人士监理的认可。
+因为同时选择了大工匠的设计师服务和主材包，所以关于这一块还是提一下。主材包号称是基本囊括了所有的主材，等同于全包，但是有几点让人不能接受，一是选择的样式较少，没有市场上种类丰富，而且像是瓷砖只能选择同一个厂家的，不能更换，这点难以接受也只能接受。二是很多看起来还不错的产品都需要升级，一旦升级，那么差价会特别高。
+关于设计这一块，我选择的设计师是刚加入360的，业务能力不错，为人也比较踏实，从职业素养上来说很赞，只是中途离职了，而我目前属于签了设计合同却找不到设计师的状态。。。</a>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bylj-little-box fl ">
+                    <div class="clearfix">
+                        <div class="little-box-img fl">
+                            <a target="_blank" href="195.html" tppabs="http://xiaogongjiang.com/gongzhang/195.html">
+                                <img src="../UpLoad/Logo/avatars/195/large.jpg" tppabs="http://xiaogongjiang.com/UpLoad/Logo/avatars/195/large.jpg" style="width: 130px;
+                                    height: 130px" alt="林三清工长" title="林三清工长"></a></div>
+                        <div class="little-box-list fl">
+                            <ul>
+                                <li class="first-li"><a target="_blank" href="195.html" tppabs="http://xiaogongjiang.com/gongzhang/195.html">
+                                    林三清</a> <em class="m_vip"></em>
+                                    <div class="wli-icon-img5">
+                                        大工匠平台认证工长</div>
+                                    <a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false"
+                                        style="background: none; width: auto; vertical-align: middle; padding-left: 20px;
+                                        cursor: pointer">
+                                        <img src="../images/online.gif" tppabs="http://xiaogongjiang.com/images/online.gif"></a> </li>
+                                
+                                <li>
+                                    <p style="cursor: pointer" onclick="ShowStar()">
+                                        <img title="四皇冠(星数越多，级别越高)" src="../Images/huangguan.gif" tppabs="http://xiaogongjiang.com/Images/huangguan.gif" /><img title="四皇冠(星数越多，级别越高)" src="../Images/huangguan.gif" tppabs="http://xiaogongjiang.com/Images/huangguan.gif" /><img title="四皇冠(星数越多，级别越高)" src="../Images/huangguan.gif" tppabs="http://xiaogongjiang.com/Images/huangguan.gif" /><img title="四皇冠(星数越多，级别越高)" src="../Images/huangguan.gif" tppabs="http://xiaogongjiang.com/Images/huangguan.gif" /></p>
+                                </li>
+                                <li>签单均价：<span>438.95/㎡</span></li>
+                                <li>总签约数：<span><a target="_blank" href="gongdi-195.html" tppabs="http://xiaogongjiang.com/gongzhang/gongdi-195.html">43</a></span></li>
+                                 <li>施工质量：<span><em style="font-size: 14px; color: #ea8731" title="9.39分">
+                                    9.39分</em></span></li>
+                                
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-recommend">
+                        <div class="recommend-tittle clearfix">
+                            <p class="fl">
+                                【业主评价】</p>
+                            <div class="fl">
+                                <img src="../../static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png" tppabs="http://static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png"></div>
+                        </div>
+                        <p class="xzheight">
+                            
+                            <a href="../Comment/list-林三清.html" tppabs="http://xiaogongjiang.com/Comment/list-林三清.html" target="_blank">
+                                从量房到施工，林工都给人一种值得信任的感觉，设身处地的为我们着想，对我们业主的要求也是全力满足，对工地监管也很负责，刚刚完成水电施工，很满意，各个地方都按照计划施工到位，希望在后面的泥木工施工中，一如既往，我对林工有信心</a>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bylj-little-box fl ">
+                    <div class="clearfix">
+                        <div class="little-box-img fl">
+                            <a target="_blank" href="3899.html" tppabs="http://xiaogongjiang.com/gongzhang/3899.html">
+                                <img src="../UpLoad/Logo/avatars/3899/large.jpg" tppabs="http://xiaogongjiang.com/UpLoad/Logo/avatars/3899/large.jpg" style="width: 130px;
+                                    height: 130px" alt="张本利工长" title="张本利工长"></a></div>
+                        <div class="little-box-list fl">
+                            <ul>
+                                <li class="first-li"><a target="_blank" href="3899.html" tppabs="http://xiaogongjiang.com/gongzhang/3899.html">
+                                    张本利</a> <em class="m_vip"></em>
+                                    <div class="wli-icon-img5">
+                                        大工匠平台认证工长</div>
+                                    <a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false"
+                                        style="background: none; width: auto; vertical-align: middle; padding-left: 20px;
+                                        cursor: pointer">
+                                        <img src="../images/online.gif" tppabs="http://xiaogongjiang.com/images/online.gif"></a> </li>
+                                
+                                <li>
+                                    <p style="cursor: pointer" onclick="ShowStar()">
+                                        <img title="一皇冠(星数越多，级别越高)" src="../Images/huangguan.gif" tppabs="http://xiaogongjiang.com/Images/huangguan.gif" /></p>
+                                </li>
+                                <li>签单均价：<span>497.20/㎡</span></li>
+                                <li>总签约数：<span><a target="_blank" href="gongdi-3899.html" tppabs="http://xiaogongjiang.com/gongzhang/gongdi-3899.html">27</a></span></li>
+                                 <li>施工质量：<span><em style="font-size: 14px; color: #ea8731" title="9.18分">
+                                    9.18分</em></span></li>
+                                
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-recommend">
+                        <div class="recommend-tittle clearfix">
+                            <p class="fl">
+                                【业主评价】</p>
+                            <div class="fl">
+                                <img src="../../static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png" tppabs="http://static.jiaju.com/jiaju/com/images/qgz/w_line_img_14.png"></div>
+                        </div>
+                        <p class="xzheight">
+                            
+                            <a href="../Comment/list-张本利.html" tppabs="http://xiaogongjiang.com/Comment/list-张本利.html" target="_blank">
+                                張工长很注重施工质量，一心为业主想。如我家开发商安装的小弱电箱在烟道上，换大后就打穿了烟道的外层。安装前张工长就想出一个赌塞的方案，实施过程中又出现赌不严实，仍有烟味的问题，后来他果断作出改的决定，让弱电箱落在实墙上，使业主再也闻不到烟道里传出的味道。</a>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="site-page">
+                 <a href="index.htm" tppabs="http://xiaogongjiang.com/gongzhang/list1.html">首页</a> <a style="width:48px;">上一页</a> <a class="site-page-a">1</a> <a  href="list2.html" tppabs="http://xiaogongjiang.com/gongzhang/list2.html">2</a> <a  href="list3.html" tppabs="http://xiaogongjiang.com/gongzhang/list3.html">3</a> <span>...</span> <a href="list9.html" tppabs="http://xiaogongjiang.com/gongzhang/list9.html">9</a> <a style="width:48px;" href="list2.html" tppabs="http://xiaogongjiang.com/gongzhang/list2.html">下一页</a> <a href="list9.html" tppabs="http://xiaogongjiang.com/gongzhang/list9.html">末页</a>
+            </div>
+        </div>
+    </div>
+    
+    <!--尾部-->
+    <div class="bottom-nav mt30">
+ <a target="_blank" href="javascript:void0;" tppabs="http://xiaogongjiang.com/about/connect.html" rel="nofollow" >联系我们</a>| <a title="关于我们"
+        href="javascript:void0;" tppabs="http://xiaogongjiang.com/about/about.html" rel="nofollow">关于我们</a>| <a target="_blank" href="javascript:void0;" tppabs="http://xiaogongjiang.com/about/link.html" rel="nofollow">
+            友情链接</a>| <a target="_blank" href="javascript:void0;" tppabs="http://xiaogongjiang.com/about/help.html" rel="nofollow">帮助中心</a>|
+    <a target="_blank" href="javascript:void0;" tppabs="http://xiaogongjiang.com/about/jobs.html" rel="nofollow">高薪诚聘</a>| <a target="_blank"
+        href="javascript:void0;" tppabs="http://xiaogongjiang.com/about/falv.html" rel="nofollow">法律申明</a>| <a target="_blank" href="javascript:void0;" tppabs="http://xiaogongjiang.com/about/sitemap.html"
+            rel="nofollow">网站地图</a>| <a target="_blank" href="javascript:void0;" tppabs="http://m.gz360.com/wh"
+            rel="nofollow">手机版</a>
+</div>
+<div class="copyright">
+    © 2017 xiaogongjiang.com 版权：武汉大工匠电子商务有限公司<br /> 鄂ICP备17019434号-1 <a target="_blank" href="javascript:void0;" tppabs="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42011102000329" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="../beian.png" tppabs="http://xiaogongjiang.com/beian.png" style="float:left;"/></a>
+     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253376399'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/q_stat.php%3Fid%3D1253376399%26l%3D2' type='text/javascript'%3E%3C/script%3E"));</script>
+	 <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "../../hm.baidu.com/hm.js-1a49dfe219178bbc406d995aa7b09728"/*tpa=http://hm.baidu.com/hm.js?1a49dfe219178bbc406d995aa7b09728*/;
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><br />
+<!--<a  key ="54c89b2ec274e71c5265cc12"  logo_size="83x30"  logo_type="realname"  href="http://www.anquan.org" ><script src="http://static.anquan.org/static/outer/js/aq_auth.js"></script></a>-->
+</div>
+
+
+<div style="right: 106px;" class="scroll">
+    <a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false">
+        <div class="ts">
+        </div>
+    </a><a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false">
+        <div class="ts-1">
+            汉口咨询</div>
+    </a><a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false">
+        <div class="gzjm">
+            武昌咨询</div>
+    </a><a onclick="window.open('http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%225902476%22%2C%22userId%22%3A%228017321%22%7D','_blank','width=800,height=500,left=250, top=100,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=no');return false">
+        <div class="sjsjm">
+            汉阳咨询</div>
+    </a><a target="_blank" rel="nofollow" href="../Member/msglogin.aspx.htm" tppabs="http://xiaogongjiang.com/Member/msglogin.aspx">
+        <div class="fzjm">
+            查看报价</div>
+        </a><a target="_blank" rel="nofollow" href="../Member/msgloginforcom.aspx.htm" tppabs="http://xiaogongjiang.com/Member/msgloginforcom.aspx">
+                <div class="qzzp">
+                    评价工长</div>
+
+            </a>
+    <a target="_blank" rel="nofollow">
+        <div class="gt">
+            回到顶部
+        </div>
+    </a>
+    
+</div>
+<!--导航-->
+<style>
+     .scroll
+    {
+        top: 217px;
+        cursor: pointer;
+        height: 150px;
+        width: 90px;
+        color: #333333;
+        position: fixed;
+        _position: absolute; /*兼容IE6*/
+        _top: expression(eval(document.documentElement.scrollTop)+595); /*700为图片距离顶部的设定距离，可以修改。不加700则图片紧贴在顶部滚动*/
+        z-index: 1000;
+    }
+    .scroll a
+    {
+        text-decoration: none;
+    }
+    .ts
+    {
+        background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat 0 0 transparent;
+        height: 102px;
+    }
+    .ts-1
+    {
+        background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat 0 -102px transparent;
+        height: 35px;
+        line-height: 25px;
+        padding-left: 27px;
+        font-size: 14px;
+        color: #109566;
+    }
+    .ts-1:hover
+    {
+        background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat -90px -102px transparent;
+        color: #fff;
+    }
+    .gzjm
+    {
+        background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat 0 -102px transparent;
+        height: 35px;
+        line-height: 25px;
+        color: #109566;
+        padding-left: 27px;
+        font-size: 14px;
+    }
+    .gzjm:hover
+    {
+        background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat -90px -103px transparent;
+        color: #fff;
+    }
+    .sjsjm
+    {
+        background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat 0 -102px transparent;
+        height: 35px;
+        line-height: 25px;
+        padding-left: 27px;
+        font-size: 14px;
+        color: #109566;
+    }
+    .sjsjm:hover
+    {
+        background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat -90px -103px transparent;
+        color: #fff;
+    }
+    .fzjm
+    {
+        background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat 0 -210px transparent;
+        height: 35px;
+        line-height: 25px;
+        padding-left: 27px;
+        font-size: 14px;
+        color: #109566;
+    }
+    .fzjm:hover
+    {
+        background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat -90px -210px transparent;
+        color: #fff;
+    }
+    .qzzp
+    {
+        background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat -90px -245px transparent;
+        height: 35px;
+        line-height: 25px;
+        padding-left: 27px;
+        font-size: 14px;
+        color: #fff;
+    }
+    .qzzp:hover
+    {
+        background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat -90px -245px transparent;
+        color: #fff;
+    }
+    .gt{background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat 0 -280px transparent;
+        height: 36px;
+        line-height: 28px;
+        padding-left: 27px;
+        font-size: 14px;
+        color: #109566;;}
+    .gt:hover{background: url("../images/topss-new.png"/*tpa=http://wh.gz360.com/images/topss-new.png*//*tpa=http://wh.gz360.com/images/topss-new.png*/) no-repeat -90px -280px transparent;
+        
+        color: #fff;}
+    html
+    {
+        _text-overflow: ellipsis;
+    }
+/*解决IE6下图片抖动*/
+</style>
+<script type="text/javascript">    $(document).ready(function () {
+        var show_delay;
+        var scroll_left = parseInt((document.body.offsetWidth - 1000) / 2) - 200; //960为页面宽度
+        $(".gt").click(function () {
+		$("html,body").animate({ scrollTop: 0 }, 200);	
+            //document.documentElement.scrollTop = 0;
+            //document.body.scrollTop = 0;
+        });
+        $(window).resize(function () {
+            scroll_left = parseInt((document.body.offsetWidth - 1000) / 2) - 200;
+            $(".scroll").css("right", scroll_left);
+        });
+        reshow(scroll_left, show_delay);
+    });
+    function reshow(marign_l, show_d) {
+        $(".scroll").css("right", marign_l);
+        if ((document.documentElement.scrollTop + document.body.scrollTop) != 0) {
+            //$(".scroll").css("display", "block");
+        }
+        else {
+            //$(".scroll").css("display", "none");
+        }
+        //if (show_d) window.clearTimeout(show_d);
+        //show_d = setTimeout("reshow()", 500);
+    } </script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '../../push.zhanzhang.baidu.com/push.js'/*tpa=http://push.zhanzhang.baidu.com/push.js*/;
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+    <div class="StarDetail" style="display: none">
+        <div class="StarClose">
+            <img src="../Images/close.png" tppabs="http://xiaogongjiang.com/Images/close.png" style="cursor: pointer" title="关闭" onclick="CloseYY()" /></div>
+        <div class="StarTitle">
+            <span>工长星级解释</span>
+        </div>
+        <div class="StarContent">
+            <p>大工匠主要根据：<b>工长的签单数、</b>&nbsp;<b>工地质量评分、</b>&nbsp;<b>业主好评数</b>对工长进行评分，分数越高，级别越高，按照标准平台工长共有5大级别，25小级，依照<b>由低到高</b>依次为：银星、金星、钻石、皇冠、金冠</br></p>
+			<p style="margin-top:10px;">工长根据级别高低在正常报价基础上可<b>额外收取星级费</b>，星级费标准为：</br>
+银星：0元&nbsp;&nbsp;金星：0元&nbsp;&nbsp;钻石：1000元&nbsp;&nbsp;皇冠：2000元&nbsp;&nbsp;金冠：3000元</br>
+            <div style="text-indent: 0; color: #01a569; font-weight: bold; margin-top: 10px;margin-bottom: 10px">
+                星级排序：（由低到高）</div>
+            <img src="../Images/stardetails.gif" tppabs="http://xiaogongjiang.com/Images/stardetails.gif"></p>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+$("#nav-2").attr("class", "nav-1hover");
+</script>
+</html>
